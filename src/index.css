@@ -22,37 +22,11 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -66,3 +40,85 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Reset simple */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Menu */
+nav {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #0077cc;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header { background: #f0f0f0; padding: 1rem; }
+header ul { display: flex; list-style: none; gap: 1.5rem; margin: 0; padding: 0; }
+header a { text-decoration: none; color: #333; font-weight: bold; }
+header a:hover, header a:focus { color: #0077cc; outline: none; }
+
+/* Footer */
+footer { background: #f0f0f0; padding: 1rem; text-align: center; font-size: 0.9rem; }
+
+/* Hero */
+.hero { padding: 2rem; background-color: #e0f7fa; text-align: center; }
+
+/* Cat grid */
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 1rem; }
+.cat-card { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; text-align: center; }
+.cat-card img { width: 100%; border-radius: 8px; }
+
+/* Buttons */
+button { padding: 0.5rem 1rem; background-color: #0077cc; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+button:hover, button:focus { background-color: #005fa3; outline: none; }
+
+/* FAQ */
+details { margin-bottom: 1rem; }
+summary { font-weight: bold; cursor: pointer; }
