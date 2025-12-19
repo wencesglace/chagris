@@ -113,11 +113,12 @@ footer { background: #f0f0f0; padding: 1rem; text-align: center; font-size: 0.9r
 /* Cat grid */
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 1rem; }
 .cat-card { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; text-align: center; }
-.cat-card img { width: 100%; border-radius: 8px; }
+.cat-card img { width: 100%; border-radius: 8px; aspect-ratio: 1/1; object-fit: cover;}
 
 /* Buttons */
 button { padding: 0.5rem 1rem; background-color: #0077cc; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 button:hover, button:focus { background-color: #005fa3; outline: none; }
+button:disabled { background-color: #ccc; cursor: not-allowed; }
 
 /* FAQ */
 details { margin-bottom: 1rem; }
