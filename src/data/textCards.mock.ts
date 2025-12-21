@@ -1,4 +1,4 @@
-import type { TextCardProps } from '../components/TextCard'
+import type { TextCardProps } from '../components/textCard/TextCard'
 
 export const textCards: TextCardProps[] = [
   {

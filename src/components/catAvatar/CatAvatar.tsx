@@ -1,6 +1,6 @@
 // Preview des chats en mode bulle d'avatar
 
-import { cats } from '../data/cats.mock'
+import { cats } from '../../data/cats.mock'
 
 export default function CatAvatar() {
   return (

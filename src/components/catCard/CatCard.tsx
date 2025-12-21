@@ -1,4 +1,4 @@
-import type { Cat } from "../type/cats";
+import type { Cat } from "../../type/cats";
 
 export default function CatCard({
   name,

@@ -1,0 +1,16 @@
+/* Styles globaux de base :
+   body, html, layout général, fond du site,
+   règles communes à toutes les pages */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+

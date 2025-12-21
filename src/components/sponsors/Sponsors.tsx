@@ -1,6 +1,6 @@
 // Les soutiens de l'association
 
-import type { Sponsor } from '../data/sponsors.mock'
+import type { Sponsor } from '../../data/sponsors.mock'
 
 type SponsorsProps = {
   sponsors: Sponsor[]
