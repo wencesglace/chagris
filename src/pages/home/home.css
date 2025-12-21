@@ -73,20 +73,6 @@ main, section {
   margin-bottom: 1rem;
 }
 
-.text-card button {
-  margin: 0.25rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.text-card button:hover {
-  background-color: #0056b3;
-}
-
 /* TextBand */
 .text-band {
   background: #eee;

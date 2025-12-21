@@ -1,4 +1,5 @@
 type FAQItem = { question: string; answer: string };
+import './faq.css';
 
 const faqs: FAQItem[] = [
   {

@@ -1,4 +1,5 @@
 import type { Cat } from "../../type/cats";
+import './catCard.css';
 
 export default function CatCard({
   name,

@@ -1,4 +1,5 @@
 // encart un peu plus léger
+import './callout.css';
 
 type CalloutProps = {
   text: string

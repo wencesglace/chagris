@@ -1,3 +1,111 @@
-/* Couleurs globales du site :
-   palettes (rose, bleu, vert, jaune, rouge, noir, blanc)
-   et leurs variantes (default, subdued, hover, pressed, disabled) */
+/* Couleurs globales du site
+Note : les numéros font référence à la nuance dans Radix */
+
+:root {
+  /* Opacité */
+   --color-darken-01: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 5% */
+   --color-darken-02: hsla(163, 83%, 7%, 0.1);  /* --color-black-09 à 10% */
+   --color-darken-03: hsla(163, 83%, 7%, 0.2);  /* --color-black-09 à 20% */
+
+  /* Noir */
+  --color-black-09: #032018; /* main color */
+  --color-black-10: #1B372F; /* hover */
+  --color-black-11: #07251D; /* active, text disabled */
+  --color-black-03: #e1eae7; /* disabled, subdued */
+  --color-black-02: #ecf3f0; /* background */
+
+  /* Blanc */
+  --color-white-09: #faf8f6; /* main color */
+  --color-white-10: #eae8e6; /* hover */
+  --color-white-11: #d9d7d5; /* active */
+  --color-white-03: #f5f4f3; /* disabled, subdued */
+  --color-white-02: #faf8f6; /* background */
+
+  /* Jaune : la marque */
+  --color-yellow-09: #ffb500; /* main color */
+  --color-yellow-10: #f5ab00; /* hover */
+  --color-yellow-11: #d59b1f; /* active */
+  --color-yellow-03: #ffe8b8; /* disabled, subdued */
+  --color-yellow-02: #fcf1e1; /* background */
+
+  /* Vert : soins à l'animal */
+  --color-green-09: #44ad60; /* main color */
+  --color-green-10: #36a154; /* hover */
+  --color-green-11: #127635; /* active */
+  --color-green-03: #e0efe2; /* disabled, subdued */
+  --color-green-02: #edf3ee; /* background */
+
+  /* Bleu : adoption & FA */
+  --color-blue-09: #555dfb; /* main color */
+  --color-blue-10: #4b53e0; /* hover */
+  --color-blue-11: #4144d0; /* active */
+  --color-blue-03: #e5e9f8; /* disabled, subdued */
+  --color-blue-02: #eff1f9; /* background */
+
+  /* Rose : dons & bénévolat */
+  --color-pink-09: #ec427a; /* main color */
+  --color-pink-10: #dd336e; /* hover */
+  --color-pink-11: #bf0958; /* active */
+  --color-pink-03: #fce7f3; /* disabled, subdued */
+  --color-pink-02: #fff0f7; /* background */
+
+  /* === SURFACES === */
+
+  /* Surface principale (pages) */
+  --surface-default: var(--color-white-09);
+  --on-surface-default: var(--color-black-09);
+
+  /* === SURFACES THÉMATIQUES === */
+
+  /* Vert */
+  --surface-green: var(--color-green-02);
+  --surface-green-subtle: var(--color-green-03);
+  --on-surface-green: var(--color-green-09);
+
+  /* Rose */
+  --surface-rose: var(--color-rose-02);
+  --surface-rose-subtle: var(--color-rose-03);
+  --on-surface-rose: var(--color-rose-09);
+
+  /* Bleu */
+  --surface-blue: var(--color-blue-02);
+  --surface-blue-subtle: var(--color-blue-03);
+  --on-surface-blue: var(--color-blue-09);
+
+  /* Jaune */
+  --surface-yellow: var(--color-yellow-02);
+  --surface-yellow-subtle: var(--color-yellow-03);
+  --on-surface-yellow: var(--color-yellow-09);
+
+  /* === INTERACTIONS GÉNÉRIQUES === */
+
+  --action-bg: var(--color-black-09);
+  --action-bg-hover: var(--color-black-10);
+  --action-bg-active: var(--color-black-11);
+  --action-text: var(--color-white-09);
+  --action-disabled-bg: var(--color-black-03);
+  --action-disabled-text: var(--color-black-11);
+
+  /* === ACTIONS VERT === */
+  --action-green-bg: var(--color-green-09);
+  --action-green-bg-hover: var(--color-green-10);
+  --action-green-bg-active: var(--color-green-11);
+  --action-green-text: var(--color-white-09);
+
+  /* === ACTIONS ROSE === */
+  --action-pink-bg: var(--color-pink-09);
+  --action-pink-bg-hover: var(--color-pink-10);
+  --action-pink-bg-active: var(--color-pink-11);
+  --action-pink-text: var(--color-white-09);
+
+  /* === ACTIONS BLEU === */
+  --action-blue-bg: var(--color-blue-09);
+  --action-blue-bg-hover: var(--color-blue-10);
+  --action-blue-bg-active: var(--color-blue-11);
+  --action-blue-text: var(--color-white-09);
+
+  /* === ACTIONS TRANSPARENTES === */
+  --action-transparent-text: var(--color-black-09);
+  --action-transparent-bg-hover: var(--color-darken-01);
+  --action-transparent-bg-active: var(--color-darken-02);
+}

@@ -1,6 +1,6 @@
 import CatCard from "../../components/catCard/CatCard";
 import { cats } from "../../data/cats.mock";
-import '../../style/adoption.css';
+import './adoption.css';
 
 export default function Adopt() {
   return (
