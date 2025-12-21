@@ -1,6 +1,6 @@
 import Hero from '../../components/hero/Hero'
 import TextCard from '../../components/textCard/TextCard'
-import TextBand from '../../components/textBrand/TextBand'
+import TextBand from '../../components/textBand/TextBand'
 import CatAvatar from '../../components/catAvatar/CatAvatar'
 import Callout from '../../components/callout/Callout'
 import FAQ from '../../components/faq/FAQ'
@@ -9,6 +9,8 @@ import Footer from '../../components/footer/Footer'
 
 import { textCards } from "../../data/textCards.mock"
 import { sponsors } from '../../data/sponsors.mock'
+
+import './home.css';
 
 export default function Home() {
   return (

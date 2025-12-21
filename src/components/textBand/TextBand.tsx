@@ -1,4 +1,5 @@
 {/* Bande de texte qui défile */}
+import './textBand.css';
 
 type TextBandProps = {
   text: string

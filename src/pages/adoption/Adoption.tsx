@@ -1,7 +1,7 @@
 import CatCard from "../../components/catCard/CatCard";
 import type { Cat } from "../../type/cats";
 import { useEffect, useState } from "react";
-import '../../styles/adoption.css';
+import './adoption.css';
 
 export default function Adopt() {
   const [cats, setCats] = useState<Cat[]>([]);

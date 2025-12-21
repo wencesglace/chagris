@@ -1,6 +1,7 @@
 // Les soutiens de l'association
 
 import type { Sponsor } from '../../data/sponsors.mock'
+import './sponsors.css';
 
 type SponsorsProps = {
   sponsors: Sponsor[]
