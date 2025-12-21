@@ -1,14 +1,45 @@
-import FAQ from "../../components/FAQ";
+import Header from '../../components/Header'
+import Hero from '../../components/Hero'
+import TextCard from '../../components/TextCard'
+import TextBand from '../../components/TextBand'
+import CatAvatar from '../../components/CatAvatar'
+import Callout from '../../components/Callout'
+import FAQ from '../../components/FAQ'
+import Sponsors from '../../components/Sponsors'
+import Footer from '../../components/Footer'
+
+import { textCards } from "../../data/textCards.mock"
+import { sponsors } from '../../data/sponsors.mock'
 
 export default function Home() {
   return (
-    <main>
-      <section className="hero">
-        <h2>Nous protégeons les chats libres de l’Isère</h2>
-        <p>Depuis plus de 20 ans, nous veillons sur les chats des rues.</p>
+    <>
+      <Hero />
+
+      {/* Section TextCards */}
+      <section className="text-cards-section">
+        {textCards.map((card, i) => (
+          <TextCard key={i} {...card} />
+        ))}
       </section>
 
+      {/* Bandeau texte */}
+      <TextBand text="Bienvenue sur le site de l'association !" />
+
+      {/* Chats à l'adoption */}
+      <CatAvatar/>
+
+      {/* Callout légal */}
+      <Callout text="Texte légal" />
+
+      {/* FAQ */}
       <FAQ />
-    </main>
-  );
+
+      {/* Sponsors */}
+      <Sponsors sponsors={sponsors} />
+
+      {/* Footer */}
+      <Footer />
+    </>
+  )
 }

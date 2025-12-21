@@ -1,3 +1,6 @@
+{/* Boutons d'action principaux */}
+{/* Style et props à définir */}
+
 type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
