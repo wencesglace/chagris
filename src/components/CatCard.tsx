@@ -1,27 +1,27 @@
-import type { CatStatus } from "../pages/adoption/Adoption";
+import type { Cat } from "../type/cats";
 
-type CatCardProps = {
-  name: string;
-  age: string;
-  image: string;
-  description: string;
-  status: CatStatus;
-};
-
-export default function CatCard({ name, age, image, description, status }: CatCardProps) {
-  const isAvailable = (status === 'disponible');
+export default function CatCard({
+  name,
+  age,
+  image,
+  description,
+  status,
+}: Cat) {
+  const isAvailable = status === "disponible";
   const buttonLabel = {
-  "disponible": "Adopter",
-  "en attente": "Bientôt à l'adoption",
-  "réservé": "Déjà réservé",
-}[status]
+    disponible: "Adopter",
+    "en attente": "Bientôt à l'adoption",
+    réservé: "Déjà réservé",
+  }[status];
   return (
     <div className="cat-card">
       <img src={image} alt={`Photo de ${name}`} />
-      <h3>{name} - {age}</h3>
+      <h3>
+        {name} - {age}
+      </h3>
       <p>{description}</p>
       <button disabled={!isAvailable}>
-        {status === 'disponible' ? 'Adopter' : buttonLabel}
+        {status === "disponible" ? "Adopter" : buttonLabel}
       </button>
     </div>
   );

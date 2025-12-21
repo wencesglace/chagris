@@ -1,0 +1,169 @@
+/* Container global */
+main, section {
+  padding: 2rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow: hidden; /* évite que l'image déborde */
+  min-height: 300px;
+}
+
+/* Image derrière le texte */
+.hero-image {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%; /* ajuste selon la taille souhaitée */
+  height: auto;
+  opacity: 0.2; /* pour que le texte soit lisible */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2; /* au-dessus de l'image */
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+
+
+/* TextCard section */
+.text-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.text-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.text-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.text-card p {
+  margin-bottom: 1rem;
+}
+
+.text-card button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-card button:hover {
+  background-color: #0056b3;
+}
+
+/* TextBand */
+.text-band {
+  background: #eee;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* CatAvatar */
+.cat-avatar {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cat-avatar h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-avatar p {
+  margin-bottom: 1rem;
+}
+
+.cat-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cat-grid .cat-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Callout */
+.callout {
+  background: #ddd;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* FAQ */
+.faq {
+  padding: 2rem;
+}
+
+.faq h2 {
+  margin-bottom: 1rem;
+}
+
+/* Sponsors */
+.sponsors {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sponsor-logos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-logos img {
+  max-width: 100px;
+  max-height: 50px;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 1rem 2rem;
+  text-align: center;
+}
