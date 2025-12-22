@@ -12,24 +12,18 @@ export const textCards: TextCardProps[] = [
     secondaryButtonHref: "",
   },
   {
-    title: "Points de nourrissage",
-    description:
-      "Nous mettons en place des points de nourrissage fixes et des abris. Ces installations nous permettent de nous assurer que les chats identifiés vivent correctement dans leur environnement.",
-    theme: "pink",
-  },
-  {
-    title: "Identification et stérilisation",
-    description:
-      "Chaque chat recueilli est stérilisé et identifié chez un vétérinaire. C’est une question de salubrité publique et de protection de la faune qui cohabite avec les chats.",
-    theme: "green",
-    primaryButtonLabel: "J'ai trouvé un chat",
-    primaryButtonHref: "",
-  },
-  {
     title: "Soins aux chats",
     description:
       "En cas de blessure ou de mauvais état de santé de l'animal, nous lui fournissons les soins nécessaires grâce à nos partenariats avec des vétérinaires.",
     theme: "green",
+  },
+  {
+    title: "Collecte et récupération de nourriture",
+    description:
+      "Parce que l’association a besoin de votre générosité, nous organisons régulièrement des collectes en Isère afin de récupérer des dons et de la nourriture. Votre aide nous est précieuse car elle nous permet d’alimenter nos points de nourrissage.",
+    theme: "pink",
+    primaryButtonLabel: "Faire un don",
+    primaryButtonHref: "",
   },
   {
     title: "Mise à l'adoption",
@@ -41,11 +35,18 @@ export const textCards: TextCardProps[] = [
     primaryButtonHref: "",
   },
   {
-    title: "Collecte et récupération de nourriture",
+    title: "Identification et stérilisation",
     description:
-      "Parce que l’association a besoin de votre générosité, nous organisons régulièrement des collectes en Isère afin de récupérer des dons et de la nourriture. Votre aide nous est précieuse car elle nous permet d’alimenter nos points de nourrissage.",
-    theme: "pink",
-    primaryButtonLabel: "Faire un don",
+      "Chaque chat recueilli est stérilisé et identifié chez un vétérinaire. C’est une question de salubrité publique et de protection de la faune qui cohabite avec les chats.",
+    theme: "green",
+    primaryButtonLabel: "J'ai trouvé un chat",
     primaryButtonHref: "",
+  },
+
+  {
+    title: "Points de nourrissage",
+    description:
+      "Nous mettons en place des points de nourrissage fixes et des abris. Ces installations nous permettent de nous assurer que les chats identifiés vivent correctement dans leur environnement.",
+    theme: "pink",
   },
 ];

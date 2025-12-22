@@ -1,0 +1,46 @@
+.text-band {
+  background-color: var(--color-pink-10);
+  color: var(--on-surface-pink-contrasted);
+  padding: 0.5rem;
+  margin-bottom: -10px;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  rotate: -0.5deg;
+  border: 2px solid var(--color-pink-10);
+}
+
+/* Piste animée */
+.text-band-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Contenu réel */
+.text-band-content {
+  display: flex;
+  gap: var(--spacing-4);
+  width: max-content;
+  animation: text-band-scroll 120s linear infinite;
+}
+
+/* Texte */
+.text-band-content span {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-band-content {
+    animation: none;
+  }
+}
+
+@keyframes text-band-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
