@@ -1,0 +1,54 @@
+.text-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  background: var(--surface-default);
+  padding: 40px 32px 32px 32px;
+  border-radius: 40px;
+
+  break-inside: avoid;
+  margin-bottom: var(--spacing-32);
+}
+
+.text-card.blue {
+  background: var(--surface-blue);
+  color: var(--on-surface-default);
+}
+
+.text-card.blue h2 {
+  color: var(--on-surface-blue);
+}
+
+.text-card.pink {
+  background: var(--surface-pink);
+  color: var(--on-surface-default);
+}
+
+.text-card.pink h2 {
+  color: var(--on-surface-pink);
+}
+
+.text-card.green {
+  background: var(--surface-green);
+  color: var(--on-surface-default);
+}
+
+.text-card.green h2 {
+  color: var(--on-surface-green);
+}
+
+.text-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.text-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.text-card p {
+  margin-bottom: 1rem;
+}

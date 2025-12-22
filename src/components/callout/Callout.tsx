@@ -2,12 +2,13 @@
 import './callout.css';
 
 type CalloutProps = {
-  text: string
+  text: string,
+  className?: string
 }
 
-export default function Callout({ text }: CalloutProps) {
+export default function Callout({ text, className="" }: CalloutProps) {
   return (
-    <section className="callout">
+    <section className={`callout ${className}`}>
       <p>{text}</p>
     </section>
   )

@@ -6,14 +6,12 @@ type ThemeColor = "green" | "pink" | "blue" | "black" | "transparent";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ThemeColor;
   className?: string;
-  as?: "button" | "a";
   href?: string;
   icon?: React.ReactNode;
 }
 
 export default function Button({
   theme = "black",
-  as = "button",
   href,
   className = "",
   children,

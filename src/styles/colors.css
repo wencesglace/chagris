@@ -3,14 +3,14 @@ Note : les numéros font référence à la nuance dans Radix */
 
 :root {
   /* Opacité */
-   --color-darken-01: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 5% */
-   --color-darken-02: hsla(163, 83%, 7%, 0.1);  /* --color-black-09 à 10% */
-   --color-darken-03: hsla(163, 83%, 7%, 0.2);  /* --color-black-09 à 20% */
+  --color-darken-01: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 5% */
+  --color-darken-02: hsla(163, 83%, 7%, 0.1); /* --color-black-09 à 10% */
+  --color-darken-03: hsla(163, 83%, 7%, 0.2); /* --color-black-09 à 20% */
 
   /* Noir */
   --color-black-09: #032018; /* main color */
-  --color-black-10: #1B372F; /* hover */
-  --color-black-11: #07251D; /* active, text disabled */
+  --color-black-10: #1b372f; /* hover */
+  --color-black-11: #07251d; /* active, text disabled */
   --color-black-03: #e1eae7; /* disabled, subdued */
   --color-black-02: #ecf3f0; /* background */
 
@@ -61,21 +61,29 @@ Note : les numéros font référence à la nuance dans Radix */
   --surface-green: var(--color-green-02);
   --surface-green-subtle: var(--color-green-03);
   --on-surface-green: var(--color-green-09);
+  --surface-green-contrasted: var(--color-green-09);
+  --on-surface-green-contrasted: var(--color-white-09);
 
   /* Rose */
-  --surface-rose: var(--color-rose-02);
-  --surface-rose-subtle: var(--color-rose-03);
-  --on-surface-rose: var(--color-rose-09);
+  --surface-pink: var(--color-pink-02);
+  --surface-pink-subtle: var(--color-pink-03);
+  --on-surface-pink: var(--color-pink-09);
+  --surface-pink-contrasted: var(--color-pink-09);
+  --on-surface-pink-contrasted: var(--color-white-09);
 
   /* Bleu */
   --surface-blue: var(--color-blue-02);
   --surface-blue-subtle: var(--color-blue-03);
   --on-surface-blue: var(--color-blue-09);
+  --surface-blue-contrasted: var(--color-blue-09);
+  --on-surface-blue-contrasted: var(--color-white-09);
 
   /* Jaune */
   --surface-yellow: var(--color-yellow-02);
   --surface-yellow-subtle: var(--color-yellow-03);
   --on-surface-yellow: var(--color-yellow-09);
+  --surface-yellow-contrasted: var(--color-yellow-09);
+  --on-surface-yellow-contrasted: var(--color-white-09);
 
   /* === INTERACTIONS GÉNÉRIQUES === */
 
@@ -85,6 +93,15 @@ Note : les numéros font référence à la nuance dans Radix */
   --action-text: var(--color-white-09);
   --action-disabled-bg: var(--color-black-03);
   --action-disabled-text: var(--color-black-11);
+  --action-border: var(--color-black-09);
+
+  --action-contrast-bg: var(--color-white-09);
+  --action-contrast-bg-hover: var(--color-white-10);
+  --action-contrast-bg-active: var(--color-white-11);
+  --action-contrast-text: var(--color-black-09);
+  --action-contrast-disabled-bg: var(--color-white-03);
+  --action-contrast-disabled-text: var(--color-white-11);
+  --action-contrast-border: var(--color-white-09);
 
   /* === ACTIONS VERT === */
   --action-green-bg: var(--color-green-09);

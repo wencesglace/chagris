@@ -13,11 +13,17 @@
   background-color: var(--action-bg);
   color: var(--action-text);
   padding: 12px 24px;
+  width: fit-content;
+}
+
+.btn.emphasis{
+  padding: 24px 48px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 100%);
 }
 
 /* === Full width button === */
 
-.btn.is-fullwidth {
+.btn.fullwidth {
   width: 100%;
 }
 
@@ -35,6 +41,7 @@
 
 .btn-text {
   text-align: center;
+
 }
 
 /* === Thèmes colorés dynamiques === */
@@ -43,6 +50,7 @@
 .btn-green {
   background-color: var(--action-green-bg);
   color: var(--action-green-text);
+  border: 2px solid var(--action-border);
 }
 
 .btn-green:hover {
@@ -54,23 +62,25 @@
 }
 
 /* Rose */
-.btn-pink {
-  background-color: var(--action-pink-bg);
-  color: var(--action-pink-text);
+.btn-white {
+  background-color: var(--action-contrast-bg);
+  color: var(--action-contrast-text);
+  border: 2px solid var(--action-border);
 }
 
-.btn-pink:hover {
-  background-color: var(--action-pink-bg-hover);
+.btn-white:hover {
+  background-color: var(--action-contrast-bg-hover);
 }
 
-.btn-pink:active {
-  background-color: var(--action-pink-bg-active);
+.btn-white:active {
+  background-color: var(--action-contrast-bg-active);
 }
 
 /* Bleu */
 .btn-blue {
   background-color: var(--action-blue-bg);
   color: var(--action-blue-text);
+  border: 2px solid var(--action-border);
 }
 
 .btn-blue:hover {
@@ -81,10 +91,26 @@
   background-color: var(--action-blue-bg-active);
 }
 
+/* Pink */
+.btn-pink {
+  background-color: var(--action-pink-bg);
+  color: var(--action-pink-text);
+  border: 2px solid var(--action-border);
+}
+
+.btn-pink:hover {
+  background-color: var(--action-pink-bg-hover);
+}
+
+.btn-pink:active {
+  background-color: var(--action-pink-bg-active);
+}
+
 /* Transparent */
 .btn-transparent {
   background-color: transparent;
   color: var(--action-transparent-text);
+
 }
 
 .btn-transparent:hover {

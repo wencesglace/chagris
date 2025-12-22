@@ -1,3 +1,84 @@
-/* Couleurs globales du site :
-   palettes (rose, bleu, vert, jaune, rouge, noir, blanc)
-   et leurs variantes (default, subdued, hover, pressed, disabled) */
+/* Styles de textes : 
+   polices, tailles, interlignes,
+   styles spécifiques aux titres et paragraphes */
+
+/* 1. Fonts */
+/* Fonts Boulder */
+@font-face {
+  font-family: "Boulder";
+  src: url("/public/fonts/MyFont/Boulder/Boulder-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fonts Aeonik */
+@font-face {
+  font-family: "Aeonik";
+  src: url("/public/fonts/MyFont/Aeonik/Aeonik-Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/public/fonts/MyFont/Aeonik/Aeonik-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typographies */
+.h1-hero {
+  font-family: 'Boulder', sans-serif;
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: 0.5px;
+}
+
+.h1 {
+  font-family: 'Boulder', sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 0.7px;
+}
+
+.h2 {
+  font-family: 'Boulder', sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.6px;
+}
+
+.h3 {
+  font-family: 'Aeonik', sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.body1 {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.body1-bold {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.body2 {
+  font-family: 'Aeonik', sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.caption {
+  font-family: 'Aeonik', sans-serif;
+  font-size: 12px;
+  line-height: 140%;
+}

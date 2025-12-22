@@ -1,3 +1,25 @@
-/* Espacements globaux :
-   variables et règles communes pour marges, paddings
-   et rythmes verticaux */
+/* ======================================
+   Spacing
+   Échelle d’espacements du projet
+   Utilisée pour margin, padding et gap
+   ====================================== */
+
+:root {
+  /* --- Micro spacings (cas spécifiques) --- */
+  --spacing-1: 1px;
+  --spacing-2: 2px;
+  --spacing-6: 6px;
+
+  /* --- Base scale (multiple de 4) --- */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+}

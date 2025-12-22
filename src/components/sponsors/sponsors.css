@@ -1,0 +1,16 @@
+.sponsors {
+  padding: 2rem;
+  text-align: center;
+}
+
+.sponsor-logos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-logos img {
+  max-width: 100px;
+  max-height: 50px;
+}
