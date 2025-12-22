@@ -54,6 +54,8 @@ Note : les numéros font référence à la nuance dans Radix */
   /* Surface principale (pages) */
   --surface-default: var(--color-white-09);
   --on-surface-default: var(--color-black-09);
+  --surface-default-contrasted: var(--color-black-09);
+  --on-surface-default-contrasted: var(--color-white-09);
 
   /* === SURFACES THÉMATIQUES === */
 
@@ -125,4 +127,54 @@ Note : les numéros font référence à la nuance dans Radix */
   --action-transparent-text: var(--color-black-09);
   --action-transparent-bg-hover: var(--color-darken-01);
   --action-transparent-bg-active: var(--color-darken-02);
+}
+
+.bg-white {
+  background-color: var(--surface-default);
+  color: var(--on-surface-default);
+}
+
+.bg-black {
+  background-color: var(--surface-default-contrasted);
+  color: var(--on-surface-default-contrasted);
+}
+
+.bg-green {
+  background-color: var(--surface-green);
+  color: var(--on-surface-green);
+}
+
+.bg-pink {
+  background-color: var(--surface-pink);
+  color: var(--on-surface-pink);
+}
+
+.bg-blue {
+  background-color: var(--surface-blue);
+  color: var(--on-surface-blue);
+}
+
+.bg-yellow {
+  background-color: var(--surface-yellow);
+  color: var(--on-surface-yellow);
+}
+
+.bg-green-contrasted {
+  background-color: var(--surface-green-contrasted);
+  color: var(--on-surface-green-contrasted);
+}
+
+.bg-pink-contrasted {   
+  background-color: var(--surface-pink-contrasted);
+  color: var(--on-surface-pink-contrasted);
+}
+
+.bg-blue-contrasted {
+  background-color: var(--surface-blue-contrasted);
+  color: var(--on-surface-blue-contrasted);
+}
+
+.bg-yellow-contrasted {
+  background-color: var(--surface-yellow-contrasted);
+  color: var(--on-surface-yellow-contrasted);
 }

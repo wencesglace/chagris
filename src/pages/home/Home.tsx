@@ -5,7 +5,7 @@ import CatAvatar from "../../components/catAvatar/CatAvatar";
 import Callout from "../../components/callout/Callout";
 import FAQ from "../../components/faq/FAQ";
 import Sponsors from "../../components/sponsors/Sponsors";
-import Footer from "../../components/footer/Footer";
+import Wave from "../../components/wave/Wave";
 
 import { textCards } from "../../data/textCards.mock";
 import { sponsors } from "../../data/sponsors.mock";
@@ -41,7 +41,7 @@ export default function Home() {
       />
 
       {/* Chats à l'adoption */}
-      <section className="cat-avatars-container layout-full">
+      <section className="cat-avatars-container layout-full bg-blue-contrasted wavy-bottom">
         <CatAvatar />
       </section>
 
@@ -53,9 +53,6 @@ export default function Home() {
 
       {/* Sponsors */}
       <Sponsors sponsors={sponsors} />
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }

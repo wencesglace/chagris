@@ -11,7 +11,8 @@ section {
   justify-content: center;
   flex-direction: column;
   gap: var(--spacing-40);
-  padding-top: var(--spacing-80);
+  margin-top: var(--spacing-40);
+  margin-bottom: var(--spacing-40);
 }
 
 .text-cards-container h1 {
@@ -30,7 +31,39 @@ section {
 }
 
 .cat-avatars-container {
-  padding-top:40px;
-  background-color: var(--surface-blue-contrasted);
-  color: var(--on-surface-blue-contrasted);
+  position: relative;
+  margin-top: -12px;
+}
+
+.wavy-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 12px; /* hauteur de la vague */
+}
+
+.wavy-bottom.bg-black::after {
+    background: url('/src/assets/bottom-wave-black.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-white::after {
+    background: url('/src/assets/bottom-wave-white.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-blue-contrasted::after {
+    background: url('/src/assets/bottom-wave-blue.svg') repeat-x;
+}
+
+.wavy-bottom.bg-green-contrasted::after {
+    background: url('/src/assets/bottom-wave-green.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-pink-contrasted::after {
+    background: url('/src/assets/bottom-wave-pink.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-yellow-contrasted::after {
+    background: url('/src/assets/bottom-wave-yellow.svg') repeat-x; 
 }

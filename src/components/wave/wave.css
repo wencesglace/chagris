@@ -1,0 +1,21 @@
+.wave-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  color: currentColor; /* la couleur du SVG viendra d'ici */
+  pointer-events: none; 
+}
+
+.wave-container.top {
+  top: -6px;
+}
+
+.wave-container.bottom {
+  bottom: -6px;
+}
+
+.wave-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

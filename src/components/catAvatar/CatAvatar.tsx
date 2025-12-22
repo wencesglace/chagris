@@ -1,16 +1,26 @@
 // Preview des chats en mode bulle d'avatar
 
 import Button from "../button/Button";
-import { cats } from "../../data/cats.mock";
+import type { Cat } from "../../type/cats";
+import { useEffect, useState } from "react";
 import "./catAvatar.css";
 
 export default function CatAvatar() {
+  const [cats, setCats] = useState<Cat[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/cats")
+      .then((res) => res.json())
+      .then((data) => setCats(data))
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <section className="cat-avatar layout-narrow">
       <div className="cat-grid">
-        {cats.map((cat) => (
+        {cats.slice(0, 3).map((cat) => (
           <img
-            className="cat-avatar"
+            className="cat-avatar-media"
             key={cat.name}
             src={cat.image}
             alt={`Photo de ${cat.name}`}

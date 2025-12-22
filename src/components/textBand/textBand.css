@@ -1,13 +1,14 @@
 .text-band {
+  position: relative;
   background-color: var(--color-pink-10);
   color: var(--on-surface-pink-contrasted);
   padding: 0.5rem;
-  margin-bottom: -10px;
   text-align: center;
   font-weight: bold;
   overflow: hidden;
   rotate: -0.5deg;
   border: 2px solid var(--color-pink-10);
+  z-index: 2;
 }
 
 /* Piste animée */
