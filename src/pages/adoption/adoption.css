@@ -1,0 +1,12 @@
+/* Container global */
+main {
+  padding: 2rem;
+}
+
+/* Titre de la page */
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+

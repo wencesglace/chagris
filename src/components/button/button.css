@@ -1,0 +1,122 @@
+/* Base du bouton */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  gap: 12px; 
+  transition: background 0.1s, color 0.1s;
+  border: none;
+  background-color: var(--action-bg);
+  color: var(--action-text);
+  padding: 12px 24px;
+  width: fit-content;
+}
+
+.btn.emphasis{
+  padding: 24px 48px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 100%);
+}
+
+/* === Full width button === */
+
+.btn.fullwidth {
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--action-bg-hover);
+}
+
+.btn:active {
+  background-color: var(--action-bg-active);
+}
+
+.btn-icon {
+  display: inline-flex;
+}
+
+.btn-text {
+  text-align: center;
+
+}
+
+/* === Thèmes colorés dynamiques === */
+
+/* Vert */
+.btn-green {
+  background-color: var(--action-green-bg);
+  color: var(--action-green-text);
+  border: 2px solid var(--action-border);
+}
+
+.btn-green:hover {
+  background-color: var(--action-green-bg-hover);
+}
+
+.btn-green:active {
+  background-color: var(--action-green-bg);
+}
+
+/* Rose */
+.btn-white {
+  background-color: var(--action-contrast-bg);
+  color: var(--action-contrast-text);
+  border: 2px solid var(--action-border);
+}
+
+.btn-white:hover {
+  background-color: var(--action-contrast-bg-hover);
+}
+
+.btn-white:active {
+  background-color: var(--action-contrast-bg-active);
+}
+
+/* Bleu */
+.btn-blue {
+  background-color: var(--action-blue-bg);
+  color: var(--action-blue-text);
+  border: 2px solid var(--action-border);
+}
+
+.btn-blue:hover {
+  background-color: var(--action-blue-bg-hover);
+}
+
+.btn-blue:active {
+  background-color: var(--action-blue-bg-active);
+}
+
+/* Pink */
+.btn-pink {
+  background-color: var(--action-pink-bg);
+  color: var(--action-pink-text);
+  border: 2px solid var(--action-border);
+}
+
+.btn-pink:hover {
+  background-color: var(--action-pink-bg-hover);
+}
+
+.btn-pink:active {
+  background-color: var(--action-pink-bg-active);
+}
+
+/* Transparent */
+.btn-transparent {
+  background-color: transparent;
+  color: var(--action-transparent-text);
+
+}
+
+.btn-transparent:hover {
+  background-color: var(--action-transparent-bg-hover);
+}
+
+.btn-transparent:active {
+  background-color: var(--action-transparent-bg-active);
+}

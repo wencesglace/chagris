@@ -1,0 +1,33 @@
+.cat-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-40);
+  margin-top: var(--spacing-40);
+  margin-bottom: var(--spacing-40);
+}
+
+.cat-avatar h2 {
+  margin-bottom: 0.5rem;
+}
+
+.cat-avatar p {
+  margin-bottom: 2rem;
+}
+
+.cat-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cat-grid .cat-avatar-media {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--on-surface-blue-contrasted);
+  margin-left: -20px;
+  box-shadow: 0 0 0 4px var(--surface-blue-contrasted);
+}

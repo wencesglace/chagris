@@ -1,0 +1,31 @@
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center; /* centre le menu horizontalement */
+  align-items: center;
+}
+
+/* Navigation */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* espace entre les liens */
+  padding: 0;
+  margin: 0;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+header nav li a:hover {
+  color: #007bff;
+}

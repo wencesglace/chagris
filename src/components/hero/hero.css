@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  overflow: hidden; /* évite que l'image déborde */
+  min-height: 720px;
+  background: var(--surface-yellow);
+}
+
+/* Image derrière le texte */
+.hero-image {
+  position: absolute;
+  rotate: 10deg;
+  left: 50%;
+  transform: translate(-45%, 60%);
+  height: 80%;
+  width: auto;
+  z-index: 2;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-text h1 {
+  color: var(--on-surface-blue);
+  margin-bottom: var(--spacing-24);
+}
+
+.hero-text p {
+  color: var(--on-surface-pink)
+}

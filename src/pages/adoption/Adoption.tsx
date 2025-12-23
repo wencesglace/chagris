@@ -1,7 +1,7 @@
+import CatCard from "../../components/catCard/CatCard";
 import type { Cat } from "../../type/cats";
 import { useEffect, useState } from "react";
-import CatCard from "../../components/CatCard";
-import '../../style/adoption.css';
+import './adoption.css';
 
 export default function Adopt() {
   const [cats, setCats] = useState<Cat[]>([]);
@@ -12,8 +12,6 @@ export default function Adopt() {
       .then(data => setCats(data))
       .catch(err => console.error(err));
   }, []);
-
-  console.log('Cats in Adoption page:', cats);
 
   return (
     <main>

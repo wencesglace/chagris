@@ -1,0 +1,69 @@
+/* Container global */
+main,
+section {
+  padding: 2rem;
+}
+
+.text-cards-container {
+  background-color: var(--surface-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-40);
+  margin-top: var(--spacing-40);
+  margin-bottom: var(--spacing-40);
+}
+
+.text-cards-container h1 {
+  text-align: center;
+}
+
+.text-cards-section {
+  column-count: 3;
+  column-gap: var(--spacing-32);
+}
+
+@media (max-width: 640px) {
+  .text-cards-section {
+    column-count: 1;
+  }
+}
+
+.cat-avatars-container {
+  position: relative;
+  margin-top: -12px;
+}
+
+.wavy-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 12px; /* hauteur de la vague */
+}
+
+.wavy-bottom.bg-black::after {
+    background: url('/src/assets/bottom-wave-black.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-white::after {
+    background: url('/src/assets/bottom-wave-white.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-blue-contrasted::after {
+    background: url('/src/assets/bottom-wave-blue.svg') repeat-x;
+}
+
+.wavy-bottom.bg-green-contrasted::after {
+    background: url('/src/assets/bottom-wave-green.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-pink-contrasted::after {
+    background: url('/src/assets/bottom-wave-pink.svg') repeat-x; 
+}
+
+.wavy-bottom.bg-yellow-contrasted::after {
+    background: url('/src/assets/bottom-wave-yellow.svg') repeat-x; 
+}
