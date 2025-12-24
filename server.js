@@ -1,37 +1,46 @@
-import express from 'express';
+import express from "express";
+import "dotenv/config";
+import { Client } from "@notionhq/client";
 import cors from "cors";
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-// Autoriser toutes les origines (pour dev local)
 app.use(cors());
 
-// dossier contenant tes MD de chats
-const catsDir = path.join(process.cwd(), '/src/content/cats');
+const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
 
-app.get('/api/cats', (req, res) => {
+function notionPageToCat(page) {
+  const props = page.properties;
+  return {
+    nom: props.Nom?.title?.[0]?.plain_text || "Nom inconnu",
+    age: props.Age?.number || undefined,
+    sexe: props.Sexe?.select?.name || undefined,
+    description: props.Description?.rich_text?.[0]?.plain_text || "",
+    statut: props.Statut?.select?.name || "",
+    maladie: props.Maladie?.select?.name || undefined,
+    photo: props.Photo?.files?.[0]?.file?.url || undefined,
+  };
+}
+
+app.get("/api/cats", async (req, res) => {
   try {
-    const files = fs.readdirSync(catsDir);
-
-    const cats = files.map(file => {
-      const fullPath = path.join(catsDir, file);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data } = matter(fileContents);
-
-      return data;
+    const response = await notion.search({
+      filter: { value: "page", property: "object" },
+      page_size: 500,
     });
+
+    const cats = response.results.map(notionPageToCat);
 
     res.json(cats);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Failed to read cats' });
+    console.error("Erreur Notion:", err);
+    res.status(500).json({ error: "Impossible de récupérer les données Notion" });
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });

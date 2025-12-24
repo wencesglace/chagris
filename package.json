@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@notionhq/client": "^5.6.0",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
-    "gray-matter": "^4.0.3",
     "nvm": "^0.0.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

@@ -21,9 +21,9 @@ export default function CatAvatar() {
         {cats.slice(0, 3).map((cat) => (
           <img
             className="cat-avatar-media"
-            key={cat.name}
-            src={cat.image}
-            alt={`Photo de ${cat.name}`}
+            key={cat.nom}
+            src={cat.photo}
+            alt={`Photo de ${cat.nom}`}
           />
         ))}
       </div>
