@@ -1,8 +1,9 @@
 export type Cat = {
-  name: string;
-  age?: string;
+  nom: string;
+  age?: number;
+  sexe: "mâle" | "femelle" | "inconnu";
   description: string;
-  status: string;
-  health?: string;
-  image?: string;
+  statut: string;
+  maladie?: string;
+  photo?: string;
 };

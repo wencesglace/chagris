@@ -2,27 +2,33 @@ import type { Cat } from "../../type/cats";
 import './catCard.css';
 
 export default function CatCard({
-  name,
+  nom,
   age,
-  image,
+  sexe,
+  maladie,
+  photo,
   description,
-  status,
+  statut,
 }: Cat) {
-  const isAvailable = status === "disponible";
+  const isAvailable = statut === "disponible";
   const buttonLabel = {
     disponible: "Adopter",
     "en attente": "Bientôt à l'adoption",
     réservé: "Déjà réservé",
-  }[status];
+  }[statut];
   return (
     <div className="cat-card">
-      <img src={image} alt={`Photo de ${name}`} />
+      <img src={photo} alt={`Photo de ${nom}`} />
       <h3>
-        {name} - {age}
+        {nom}
       </h3>
+      <p className="details">
+        { age ? `${age > 1 ? `${age} ans` : `${age} an`}` : ""} - {sexe}
+        {maladie ? ` - Maladie: ${maladie}` : ""}
+      </p>
       <p>{description}</p>
       <button disabled={!isAvailable}>
-        {status === "disponible" ? "Adopter" : buttonLabel}
+        {statut === "disponible" ? "Adopter" : buttonLabel}
       </button>
     </div>
   );
