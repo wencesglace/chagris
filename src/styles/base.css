@@ -54,7 +54,6 @@ body {
   width: 100%;
   max-width: var(--layout-max-width);
   margin-inline: auto;
-  padding-inline: var(--layout-padding-current);
 }
 
 /* Zone de lecture resserrée */
@@ -62,7 +61,6 @@ body {
   width: 100%;
   max-width: var(--layout-narrow-max-width);
   margin-inline: auto;
-  padding-inline: var(--layout-padding-current);
 }
 
 /* Zone de lecture resserrée */
@@ -70,5 +68,4 @@ body {
   width: 100%;
   max-width: var(--layout-half-max-width);
   margin-inline: auto;
-  padding-inline: var(--layout-padding-current);
 }

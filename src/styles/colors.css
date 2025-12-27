@@ -3,9 +3,9 @@ Note : les numéros font référence à la nuance dans Radix */
 
 :root {
   /* Opacité */
-  --color-darken-01: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 5% */
-  --color-darken-02: hsla(163, 83%, 7%, 0.1); /* --color-black-09 à 10% */
-  --color-darken-03: hsla(163, 83%, 7%, 0.2); /* --color-black-09 à 20% */
+  --color-darken-01: hsla(163, 83%, 7%, 0.02); /* --color-black-09 à 5% */
+  --color-darken-02: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 10% */
+  --color-darken-03: hsla(163, 83%, 7%, 0.07); /* --color-black-09 à 20% */
 
   /* Noir */
   --color-black-09: #032018; /* main color */
@@ -125,8 +125,9 @@ Note : les numéros font référence à la nuance dans Radix */
 
   /* === ACTIONS TRANSPARENTES === */
   --action-transparent-text: var(--color-black-09);
-  --action-transparent-bg-hover: var(--color-darken-01);
-  --action-transparent-bg-active: var(--color-darken-02);
+  --action-transparent-bg-default: var(--color-darken-01);
+  --action-transparent-bg-hover: var(--color-darken-02);
+  --action-transparent-bg-active: var(--color-darken-03);
 }
 
 .bg-white {

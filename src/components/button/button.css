@@ -7,7 +7,7 @@
   font-weight: 600;
   cursor: pointer;
   text-align: center;
-  gap: 12px; 
+  gap: 12px;
   transition: background 0.1s, color 0.1s;
   border: none;
   background-color: var(--action-bg);
@@ -16,7 +16,7 @@
   width: fit-content;
 }
 
-.btn.emphasis{
+.emphasis {
   padding: 24px 48px;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 100%);
 }
@@ -41,7 +41,6 @@
 
 .btn-text {
   text-align: center;
-
 }
 
 /* === Thèmes colorés dynamiques === */
@@ -110,7 +109,7 @@
 .btn-transparent {
   background-color: transparent;
   color: var(--action-transparent-text);
-
+  background-color: var(--action-transparent-bg-default);
 }
 
 .btn-transparent:hover {

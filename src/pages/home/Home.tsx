@@ -1,8 +1,7 @@
 import Hero from "../../components/hero/Hero";
 import TextCard from "../../components/textCard/TextCard";
 import TextBand from "../../components/textBand/TextBand";
-import CatAvatar from "../../components/catAvatar/CatAvatar";
-import Callout from "../../components/callout/Callout";
+import CatAvatar from "../../components/adoptions/adoptions";
 import FAQ from "../../components/faq/FAQ";
 import Sponsors from "../../components/sponsors/Sponsors";
 
@@ -44,11 +43,10 @@ export default function Home() {
         <CatAvatar />
       </section>
 
-      {/* Callout légal */}
-      <Callout className="layout-wide" text="Texte légal" />
-
       {/* FAQ */}
-      <FAQ />
+      <section className="layout-full bg-green">
+        <FAQ />
+      </section>
 
       {/* Sponsors */}
       <Sponsors sponsors={sponsors} />
