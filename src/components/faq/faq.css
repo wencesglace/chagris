@@ -4,7 +4,7 @@
 }
 
 .faq-container h1 {
-  margin-bottom: var(--spacing-40);
+  margin-bottom: var(--spacing-80);
   text-align: center;
 }
 
@@ -12,6 +12,7 @@
   margin-bottom: var(--spacing-16);
   background-color: var(--color-darken-01);
   border-radius: 16px;
+  color: var(--action-transparent-text);
 }
 
 .faq-item:hover {
@@ -32,7 +33,6 @@
 }
 
 .faq-answer {
-  color: var(--action-transparent-text);
   padding-bottom: var(--spacing-24);
   padding-left: var(--spacing-24);
   padding-right: var(--spacing-24);
