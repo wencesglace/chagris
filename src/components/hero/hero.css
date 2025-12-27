@@ -3,10 +3,14 @@
   display: flex;
   align-items: top;
   justify-content: center;
-  padding: 4rem 2rem;
   text-align: center;
   overflow: hidden; /* évite que l'image déborde */
-  min-height: 720px;
+  min-height: 640px;
+}
+
+.hero-logo {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Image derrière le texte */
@@ -14,21 +18,19 @@
   position: absolute;
   rotate: 10deg;
   left: 50%;
-  transform: translate(-45%, 60%);
+  transform: translate(-40%, 60%);
   height: 80%;
   width: auto;
   z-index: 2;
 }
 
-.hero-text {
+.hero-content {
   position: relative;
+  padding-top: var(--spacing-64);
+  padding-bottom: var(--spacing-40);
 }
 
-.hero-text h1 {
+.hero-content p {
+  margin-bottom: var(--spacing-8);
   color: var(--on-surface-blue-contrasted);
-  margin-bottom: var(--spacing-32);
-}
-
-.hero-text p {
-  color: var(--on-surface-pink-contrasted);
 }

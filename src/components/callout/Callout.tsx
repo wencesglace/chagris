@@ -2,14 +2,14 @@
 import './callout.css';
 
 type CalloutProps = {
-  text: string,
   className?: string
 }
 
-export default function Callout({ text, className="" }: CalloutProps) {
+export default function Callout({ className="" }: CalloutProps) {
   return (
-    <section className={`callout ${className}`}>
-      <p>{text}</p>
+    <section className={`callout ${className} bg-pink`}>
+      <p className='body1-bold'>Désormais, les chats nés après le 1er janvier 2012 doivent être obligatoirement identifiés, par puce électronique ou par tatouage. </p>
+       <p className='body1'> À défaut, leurs maîtres encourent jusqu’à 750 euros d’amende</p>
     </section>
   )
 }

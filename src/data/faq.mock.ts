@@ -1,7 +1,6 @@
-type FAQItem = { question: string; answer: string };
-import './faq.css';
+export type FAQItem = { question: string; answer: string };
 
-const faqs: FAQItem[] = [
+export const faq: FAQItem[] = [
   {
     question: "Comment adopter un chat ?",
     answer:
@@ -28,17 +27,3 @@ const faqs: FAQItem[] = [
       "L'abandon d'un chat est une décision grave et doit être envisagé uniquement en dernier recours. En tant que propriétaire, vous avez la responsabilité de veiller à son bien-être. Avant d'abandonner, explorez toutes les autres options, comme le placement dans un nouveau foyer ou la consultation avec un refuge. Contactez CHAGRIS pour des conseils et des ressources sur les alternatives à l'abandon.",
   },
 ];
-
-export default function FAQ() {
-  return (
-    <section>
-      <h2>Questions fréquentes</h2>
-      {faqs.map((item, idx) => (
-        <details key={idx}>
-          <summary>{item.question}</summary>
-          <p>{item.answer}</p>
-        </details>
-      ))}
-    </section>
-  );
-}

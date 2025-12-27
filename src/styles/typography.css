@@ -57,6 +57,13 @@
   line-height: 120%;
 }
 
+.h3-bold {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+}
+
 .body1 {
   font-family: 'Aeonik', sans-serif;
   font-weight: 500;

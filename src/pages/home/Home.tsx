@@ -1,9 +1,7 @@
 import Hero from "../../components/hero/Hero";
 import TextCard from "../../components/textCard/TextCard";
 import TextBand from "../../components/textBand/TextBand";
-import CatAvatar from "../../components/catAvatar/CatAvatar";
-import Callout from "../../components/callout/Callout";
-import FAQ from "../../components/faq/FAQ";
+import CatAvatar from "../../components/adoptions/adoptions";
 import Sponsors from "../../components/sponsors/Sponsors";
 
 import { textCards } from "../../data/textCards.mock";
@@ -43,12 +41,6 @@ export default function Home() {
       <section className="layout-full bg-blue-contrasted cat-avatars-container wavy-bottom wavy-blue">
         <CatAvatar />
       </section>
-
-      {/* Callout légal */}
-      <Callout className="layout-wide" text="Texte légal" />
-
-      {/* FAQ */}
-      <FAQ />
 
       {/* Sponsors */}
       <Sponsors sponsors={sponsors} />
