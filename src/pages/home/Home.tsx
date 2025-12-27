@@ -2,7 +2,6 @@ import Hero from "../../components/hero/Hero";
 import TextCard from "../../components/textCard/TextCard";
 import TextBand from "../../components/textBand/TextBand";
 import CatAvatar from "../../components/adoptions/adoptions";
-import FAQ from "../../components/faq/FAQ";
 import Sponsors from "../../components/sponsors/Sponsors";
 
 import { textCards } from "../../data/textCards.mock";
@@ -41,11 +40,6 @@ export default function Home() {
       {/* Chats à l'adoption */}
       <section className="layout-full bg-blue-contrasted cat-avatars-container wavy-bottom wavy-blue">
         <CatAvatar />
-      </section>
-
-      {/* FAQ */}
-      <section className="layout-full bg-green">
-        <FAQ />
       </section>
 
       {/* Sponsors */}

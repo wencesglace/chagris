@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Adopt from "./pages/adoption/Adoption";
 import Contact from "./pages/contact/Contact";
+import FAQ from "./pages/faq/FAQ";
 
 function AppLayout() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function AppLayout() {
         <Route path="/" element={<Home />} />
         <Route path="/adopt" element={<Adopt />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

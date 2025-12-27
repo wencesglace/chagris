@@ -13,6 +13,7 @@
   background-color: var(--color-darken-01);
   border-radius: 16px;
   color: var(--action-transparent-text);
+  transition: background 0.1s, color 0.1s;
 }
 
 .faq-item:hover {
@@ -30,21 +31,29 @@
   padding-bottom: var(--spacing-24);
   padding-left: var(--spacing-24);
   padding-right: var(--spacing-24);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none; /* supprime la flèche native */
+}
+
+.faq-question::-webkit-details-marker {
+  display: none; /* Safari / Chrome */
 }
 
 .faq-answer {
-  padding-bottom: var(--spacing-24);
+  padding-bottom: var(--spacing-32);
   padding-left: var(--spacing-24);
   padding-right: var(--spacing-24);
 }
 
-summary {
-  /* Pin the custom marker to the container */
-  position: relative;
-  /* Register summary as an anchor element */
-  anchor-name: --summary;
-
-  &::marker {
-    content: '';
-  }
+.faq-chevron {
+  font-size: 16px;
+  transition: transform 0.25s ease-out;
 }
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+

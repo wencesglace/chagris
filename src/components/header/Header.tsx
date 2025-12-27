@@ -14,6 +14,9 @@ export default function Header() {
               <Link to="/adopt">Adoptions</Link>
             </li>
             <li>
+              <Link to="/faq">Questions</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>

@@ -28,4 +28,5 @@
   border: 4px solid var(--on-surface-blue-contrasted);
   margin-left: -20px;
   box-shadow: 0 0 0 4px var(--surface-blue-contrasted);
+  background-color: var(--surface-black);
 }
