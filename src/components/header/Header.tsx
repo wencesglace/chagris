@@ -3,21 +3,29 @@ import "./header.css";
 
 export default function Header() {
   return (
-    <header>
+    <header className="layout-full bg-blue-contrasted wavy-bottom wavy-blue">
       <div className="header-content">
         <nav aria-label="Menu principal">
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link className="body1" to="/">
+                Accueil
+              </Link>
             </li>
             <li>
-              <Link to="/adopt">Adoptions</Link>
+              <Link className="body1" to="/adopt">
+                Adoptions
+              </Link>
             </li>
             <li>
-              <Link to="/faq">Questions</Link>
+              <Link className="body1" to="/faq">
+                Questions
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link className="body1" to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
