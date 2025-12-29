@@ -13,7 +13,8 @@
     "sexe": "Mâle",
     "statut": "disponible",
     "maladie": "coryza",
-    "description": "Pas ouf comme nom"
+    "description": "Pas ouf comme nom", 
+    "photo": "src/data/images/cats/placeholder.png"
   },
   {
     "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
