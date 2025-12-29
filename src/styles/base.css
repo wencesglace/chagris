@@ -38,7 +38,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   :root {
     --layout-padding-current: var(--layout-padding-mobile);
   }

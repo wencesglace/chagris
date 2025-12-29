@@ -5,7 +5,7 @@ import CatAvatar from "../../components/adoptions/adoptions";
 import Sponsors from "../../components/sponsors/Sponsors";
 
 import { textCards } from "../../data/textCards.mock";
-import { sponsors } from "../../data/sponsors.mock";
+
 import { behavior } from "../../data/behavior.mock";
 
 import "./home.css";
@@ -43,7 +43,9 @@ export default function Home() {
       </section>
 
       {/* Sponsors */}
-      <Sponsors sponsors={sponsors} />
+      <section className="layout-full bg-green"> 
+        <Sponsors/>
+      </section>
     </>
   );
 }

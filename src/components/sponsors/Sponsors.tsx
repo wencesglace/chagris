@@ -1,22 +1,23 @@
 // Les soutiens de l'association
 
-import type { Sponsor } from '../../data/sponsors.mock'
-import './sponsors.css';
+import { sponsors } from "../../data/sponsors.mock";
+import "./sponsors.css";
 
-type SponsorsProps = {
-  sponsors: Sponsor[]
-}
-
-export default function Sponsors({ sponsors }: SponsorsProps) {
+export default function Sponsors() {
   return (
-    <section className="sponsors">
-      <h2>Ils nous soutiennent</h2>
-      <p>Merci à nos partenaires</p>
-      <div className="sponsor-logos">
-        {sponsors.map(s => (
-          <img key={s.label} src={s.logo} alt={s.label} />
+    <section className="sponsors-container layout-half">
+      <div className="text-container">
+        <h1 className="h1">Ils nous soutiennent</h1>
+        <p className="body1">Merci à nos partenaires qui nous apportent un soutiens financier, logistique... tout au long de l'année.</p>
+      </div>
+
+      <div className="sponsors-grid">
+        {sponsors.map((s) => (
+          <div className="sponsor-cell">
+            <img key={s.label} src={s.logo} alt={s.label} />
+          </div>
         ))}
       </div>
     </section>
-  )
+  );
 }

@@ -4,13 +4,13 @@ export type Sponsor = {
 }
 
 export const sponsors: Sponsor[] = [
-  { logo: 'src/pages/home/sponsors/grenoble-alpes-metropole.png', label: 'Grenoble Alpes Métropole' },
-  { logo: 'src/pages/home/sponsors/mhan.png', label: 'Mouvement Hommes Animaux Nature' },
-  { logo: 'src/pages/home/sponsors/ville-de-grenoble.png', label: 'Ville de Grenoble' },
-  { logo: 'src/pages/home/sponsors/ville-d-echirolles.png', label: 'Ville d\'Echirolles' },
-  { logo: 'src/pages/home/sponsors/ville-de-crolles.png', label: 'Ville de Crolles' },
-  { logo: 'src/pages/home/sponsors/le-champ-pres-froges.png', label: 'Le Champ Près Froges' },
-  { logo: 'src/pages/home/sponsors/la-terrasse.png', label: 'La Terrasse' },
-  { logo: 'src/pages/home/sponsors/fondation-brigitte-bardot.png', label: 'Fondation Brigitte Bardot' },
+  { logo: 'src/components/sponsors/images/grenoble-alpes-metropole.png', label: 'Grenoble Alpes Métropole' },
+  { logo: 'src/components/sponsors/images/mhan.png', label: 'Mouvement Hommes Animaux Nature' },
+  { logo: 'src/components/sponsors/images/ville-de-grenoble.png', label: 'Ville de Grenoble' },
+  { logo: 'src/components/sponsors/images/ville-d-echirolles.png', label: 'Ville d\'Echirolles' },
+  { logo: 'src/components/sponsors/images/ville-de-crolles.png', label: 'Ville de Crolles' },
+  { logo: 'src/components/sponsors/images/le-champ-pres-froges.png', label: 'Le Champ Près Froges' },
+  { logo: 'src/components/sponsors/images/la-terrasse.png', label: 'La Terrasse' },
+  { logo: 'src/components/sponsors/images/fondation-brigitte-bardot.png', label: 'Fondation Brigitte Bardot' },
 
 ]
