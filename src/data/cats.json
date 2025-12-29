@@ -1,0 +1,27 @@
+[
+  {
+    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
+    "nom": "Perlouille",
+    "sexe": "Femelle",
+    "statut": "réservé",
+    "description": "La méga super mimi perlouille ",
+    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
+  },
+  {
+    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
+    "nom": "Filipou",
+    "sexe": "Mâle",
+    "statut": "disponible",
+    "maladie": "coryza",
+    "description": "Pas ouf comme nom"
+  },
+  {
+    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
+    "nom": "Nyouki",
+    "age": 1,
+    "sexe": "Mâle",
+    "statut": "réservé",
+    "description": "C’est Nyouki le plus beau",
+    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
+  }
+]
