@@ -1,43 +1,28 @@
 import CatCard from "../../components/catCard/CatCard";
-import type { Cat } from "../../type/cats";
-import { useEffect, useState } from "react";
 import './adoption.css';
+import cats from "../../data/cats.json";
+import type { Cat } from "../../types/cats";
 
 export default function Adopt() {
-  const [cats, setCats] = useState<Cat[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchCats() {
-      try {
-        const res = await fetch("http://localhost:3000/api/cats");
-        const data: Cat[] = await res.json();
-        setCats(data);
-      } catch (err) {
-        console.error("Erreur fetch cats:", err);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchCats();
-  }, []);
-
-  if (loading) return <p>Chargement...</p>;
-  if (!cats.length) return <p>Aucun chat à afficher.</p>;
-
+  const catList: Cat[] = cats.map((c) => ({
+    ...c,
+    id: c.id,
+    age: c.age ?? undefined,
+    maladie: c.maladie ?? undefined,
+    sexe: c.sexe ?? undefined,
+    description: c.description ?? undefined,
+    photo: c.photo ?? undefined,
+    statut: c.statut ?? "en attente",
+  }));
   return (
     <main>
       <h2>Chats à adopter</h2>
       <div className="cat-grid">
-        {cats.map((cat, idx) => (
-          <CatCard key={idx} {...cat} />
+        {catList.map((cat) => (
+          <CatCard key={cat.id} {...cat} />
         ))}
       </div>
     </main>
   );
-}
-function setLoading(arg0: boolean) {
-  throw new Error("Function not implemented.");
 }
 
