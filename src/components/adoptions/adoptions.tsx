@@ -1,7 +1,7 @@
 // Preview des chats en mode bulle d'avatar
 
 import Button from "../button/Button";
-import type { Cat } from "../../type/cats";
+import type { Cat } from "../../types/cats";
 import { useEffect, useState } from "react";
 import "./adoptions.css";
 import Callout from "../callout/Callout";
@@ -10,10 +10,10 @@ export default function Adoptions() {
   const [cats, setCats] = useState<Cat[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/cats")
+    fetch("src/data/cats.json")
       .then((res) => res.json())
-      .then((data) => setCats(data))
-      .catch((err) => console.error(err));
+      .then(setCats)
+      .catch(console.error);
   }, []);
 
   return (
