@@ -1,36 +1,46 @@
-name: Fetch Cats from Notion
+name: Fetch Cats from Notion and Rebuild
 
 on:
   schedule:
-    - cron: '0 8 * * 1,4' # tous les lundi et jeudi à 8h UTC
-  workflow_dispatch: # permet de déclencher manuellement
+    - cron: '0 1 * * 0,1,2,3,4,5,6' # tous les jours à 1h UTC
+  workflow_dispatch: # permet un déclenchement manuel depuis GitHub
 
 jobs:
-  fetch_cats:
+  fetch_and_rebuild:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1️⃣ Récupérer le code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Installer Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
 
+      # 3️⃣ Installer les dépendances
       - name: Install dependencies
         run: npm ci
 
+      # 4️⃣ Récupérer les chats depuis Notion
       - name: Fetch cats from Notion
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node scripts/fetchCatsFromNotion.ts
 
-      - name: Commit updated cats.json
+      # 5️⃣ Rebuild Next.js site
+      - name: Rebuild Next.js site
+        run: node scripts/rebuild.ts
+
+      # 6️⃣ Commit et push des changements (cats.json et pages générées)
+      - name: Commit updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/cats.json
-          git commit -m "Update cats.json from Notion" || echo "No changes to commit"
+          git add out/  # si tu utilises next export
+          git commit -m "Update cats.json and rebuilt site from Notion" || echo "No changes to commit"
           git push
