@@ -4,7 +4,6 @@
 }
 
 .faq-container h1 {
-  margin-bottom: var(--spacing-80);
   text-align: center;
 }
 
@@ -14,6 +13,10 @@
   border-radius: 16px;
   color: var(--action-transparent-text);
   transition: background 0.1s, color 0.1s;
+}
+
+.faq-item .h3-bold {
+  margin: 0px;
 }
 
 .faq-item:hover {
@@ -56,4 +59,3 @@
 .faq-item[open] .faq-chevron {
   transform: rotate(180deg);
 }
-

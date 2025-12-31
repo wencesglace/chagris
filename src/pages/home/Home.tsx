@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <>
       <Hero className="layout-full bg-blue-contrasted" />
-
       {/* Section TextCards */}
       <section className="text-cards-container layout-full bg-yellow wavy-top">
         <h1 className="layout-narrow h1">

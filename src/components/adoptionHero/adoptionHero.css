@@ -1,36 +1,35 @@
-.hero {
+.adoption-hero {
   position: relative;
   display: flex;
   align-items: top;
   justify-content: center;
   text-align: center;
   overflow: hidden; /* évite que l'image déborde */
-  min-height: 640px;
+  min-height: 440px;
 }
 
-.hero .logo {
+.adoption-hero .logo {
   max-width: 100%;
   height: auto;
 }
 
 /* Image derrière le texte */
-.hero .image {
+.adoption-hero .image {
   position: absolute;
   rotate: 10deg;
   left: 50%;
-  transform: translate(-40%, 75%);
-  height: 65%;
+  transform: translate(-40%, 85%);
+  height: 90%;
   width: auto;
   z-index: 2;
 }
 
-.hero .content {
+.adoption-hero .content {
   position: relative;
   padding-top: var(--spacing-64);
   padding-bottom: var(--spacing-40);
 }
 
-.hero .content p {
-  margin-bottom: var(--spacing-16);
-  color: var(--on-surface-blue-contrasted);
+.adoption-hero .content p {
+  color: var(--on-surface-default);
 }

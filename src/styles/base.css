@@ -69,3 +69,9 @@ body {
   max-width: var(--layout-half-max-width);
   margin-inline: auto;
 }
+
+.text-container {
+  display: inherit;
+  flex-direction: inherit;
+  gap: var(--spacing-12);
+}
