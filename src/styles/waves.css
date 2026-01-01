@@ -12,43 +12,43 @@
 }
 
 .wavy-bottom.bg-black::after {
-    background: url('/src/assets/bottom-wave-black.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-black.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-white::after {
-    background: url('/src/assets/bottom-wave-white.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-white.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-blue-contrasted::after {
-    background: url('/src/assets/bottom-wave-blue.svg') repeat-x;
+    background: url('/src/assets/waves/bottom-wave-blue.svg') repeat-x;
 }
 
 .wavy-bottom.bg-green-contrasted::after {
-    background: url('/src/assets/bottom-wave-green.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-green.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-pink-contrasted::after {
-    background: url('/src/assets/bottom-wave-pink.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-pink.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-yellow-contrasted::after {
-    background: url('/src/assets/bottom-wave-yellow.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-yellow.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-blue-subdued::before {
-    background: url('/src/assets/bottom-wave-blue-subdued.svg') repeat-x;
+    background: url('/src/assets/waves/bottom-wave-blue-subdued.svg') repeat-x;
 }
 
 .wavy-bottom.bg-green-subdued::before {
-    background: url('/src/assets/bottom-wave-green-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-green-subdued.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-pink-subdued::before {
-    background: url('/src/assets/bottom-wave-pink-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-pink-subdued.svg') repeat-x; 
 }
 
 .wavy-bottom.bg-yellow-subdued::before {
-    background: url('/src/assets/bottom-wave-yellow-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/bottom-wave-yellow-subdued.svg') repeat-x; 
 }
 
 .wavy-top {
@@ -66,41 +66,41 @@
 }
 
 .wavy-top.bg-black::before {
-    background: url('/src/assets/top-wave-black.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-black.svg') repeat-x; 
 }
 
 .wavy-top.bg-white::before {
-    background: url('/src/assets/top-wave-white.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-white.svg') repeat-x; 
 }
 
 .wavy-top.bg-blue-contrasted::before {
-    background: url('/src/assets/top-wave-blue.svg') repeat-x;
+    background: url('/src/assets/waves/top-wave-blue.svg') repeat-x;
 }
 
 .wavy-top.bg-green-contrasted::before {
-    background: url('/src/assets/top-wave-green.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-green.svg') repeat-x; 
 }
 
 .wavy-top.bg-pink-contrasted::before {
-    background: url('/src/assets/top-wave-pink.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-pink.svg') repeat-x; 
 }
 
 .wavy-top.bg-yellow-contrasted::before {
-    background: url('/src/assets/top-wave-yellow.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-yellow.svg') repeat-x; 
 }
 
 .wavy-top.bg-blue::before {
-    background: url('/src/assets/top-wave-blue-subdued.svg') repeat-x;
+    background: url('/src/assets/waves/top-wave-blue-subdued.svg') repeat-x;
 }
 
 .wavy-top.bg-green::before {
-    background: url('/src/assets/top-wave-green-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-green-subdued.svg') repeat-x; 
 }
 
 .wavy-top.bg-pink::before {
-    background: url('/src/assets/top-wave-pink-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-pink-subdued.svg') repeat-x; 
 }
 
 .wavy-top.bg-yellow::before {
-    background: url('/src/assets/top-wave-yellow-subdued.svg') repeat-x; 
+    background: url('/src/assets/waves/top-wave-yellow-subdued.svg') repeat-x; 
 }

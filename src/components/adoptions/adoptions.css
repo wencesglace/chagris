@@ -8,12 +8,6 @@
   padding-bottom: var(--spacing-80);
 }
 
-.text-container {
-  display: inherit;
-  flex-direction: inherit;
-  gap: var(--spacing-24);
-}
-
 .cat-avatars {
   display: flex;
   justify-content: center;

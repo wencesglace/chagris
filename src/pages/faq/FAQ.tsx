@@ -1,5 +1,6 @@
 import "./faq.css";
 import { faq } from "../../data/faq.mock";
+import Icon from "../../components/icon/Icon";
 
 export default function FAQ() {
   return (
@@ -10,10 +11,7 @@ export default function FAQ() {
           <details key={f.question} className="faq-item ">
             <summary className="faq-question h3-bold ">
               {f.question}
-              <i
-                className="fa-solid fa-chevron-down faq-chevron"
-                aria-hidden="true"
-              />
+              <Icon name="navArrowDown" className="faq-chevron" />
             </summary>
             <div className="faq-content">
               <p className="faq-answer">{f.answer}</p>

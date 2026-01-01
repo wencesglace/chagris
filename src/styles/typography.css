@@ -31,61 +31,66 @@
 
 /* Typographies */
 .h1-hero {
-  font-family: 'Boulder', sans-serif;
+  font-family: "Boulder", sans-serif;
   font-size: 80px;
   line-height: 110%;
   letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-80);
 }
 
 .h1 {
-  font-family: 'Boulder', sans-serif;
+  font-family: "Boulder", sans-serif;
   font-size: 40px;
   line-height: 110%;
   letter-spacing: 0.7px;
+  margin-bottom: var(--spacing-32);
 }
 
 .h2 {
-  font-family: 'Boulder', sans-serif;
+  font-family: "Boulder", sans-serif;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.6px;
+  margin-bottom: var(--spacing-24);
 }
 
 .h3 {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-size: 20px;
   line-height: 120%;
+  margin-bottom: var(--spacing-16);
 }
 
 .h3-bold {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
+  margin-bottom: var(--spacing-16);
 }
 
 .body1 {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
 }
 
 .body1-bold {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
 }
 
 .body2 {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-size: 14px;
   line-height: 140%;
 }
 
 .caption {
-  font-family: 'Aeonik', sans-serif;
+  font-family: "Aeonik", sans-serif;
   font-size: 12px;
   line-height: 140%;
 }

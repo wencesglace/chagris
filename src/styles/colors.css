@@ -3,14 +3,16 @@ Note : les numéros font référence à la nuance dans Radix */
 
 :root {
   /* Opacité */
-  --color-darken-01: hsla(163, 83%, 7%, 0.02); /* --color-black-09 à 5% */
-  --color-darken-02: hsla(163, 83%, 7%, 0.05); /* --color-black-09 à 10% */
-  --color-darken-03: hsla(163, 83%, 7%, 0.07); /* --color-black-09 à 20% */
+  --color-darken-01: hsla(163, 83%, 7%, 0.02); 
+  --color-darken-02: hsla(163, 83%, 7%, 0.05); 
+  --color-darken-03: hsla(163, 83%, 7%, 0.07); 
+  --color-darken-07: hsla(163, 83%, 7%, 0.7); 
 
   /* Noir */
   --color-black-09: #032018; /* main color */
   --color-black-10: #1b372f; /* hover */
   --color-black-11: #07251d; /* active, text disabled */
+  --color-black-06: #939595; /* disabled, subdued */
   --color-black-03: #e1eae7; /* disabled, subdued */
   --color-black-02: #ecf3f0; /* background */
 
@@ -93,8 +95,8 @@ Note : les numéros font référence à la nuance dans Radix */
   --action-bg-hover: var(--color-black-10);
   --action-bg-active: var(--color-black-11);
   --action-text: var(--color-white-09);
-  --action-disabled-bg: var(--color-black-03);
-  --action-disabled-text: var(--color-black-11);
+  --action-bg-disabled: var(--color-black-03);
+  --action-text-disabled: var(--color-black-06);
   --action-border: var(--color-black-09);
 
   --action-contrast-bg: var(--color-white-09);
@@ -109,18 +111,21 @@ Note : les numéros font référence à la nuance dans Radix */
   --action-green-bg: var(--color-green-09);
   --action-green-bg-hover: var(--color-green-10);
   --action-green-bg-active: var(--color-green-11);
+  --action-green-bg-disabled: var(--color-green-03);
   --action-green-text: var(--color-white-09);
 
   /* === ACTIONS ROSE === */
   --action-pink-bg: var(--color-pink-09);
   --action-pink-bg-hover: var(--color-pink-10);
   --action-pink-bg-active: var(--color-pink-11);
+  --action-pink-bg-disabled: var(--color-pink-03);
   --action-pink-text: var(--color-white-09);
 
   /* === ACTIONS BLEU === */
   --action-blue-bg: var(--color-blue-09);
   --action-blue-bg-hover: var(--color-blue-10);
   --action-blue-bg-active: var(--color-blue-11);
+  --action-blue-bg-disabled: var(--color-blue-03);
   --action-blue-text: var(--color-white-09);
 
   /* === ACTIONS TRANSPARENTES === */

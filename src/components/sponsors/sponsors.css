@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 40px;
   margin-top: var(--spacing-40);
   margin-bottom: var(--spacing-40);
 }

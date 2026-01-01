@@ -1,12 +1,21 @@
-/* Container global */
-main {
-  padding: 2rem;
-}
-
-/* Titre de la page */
-main h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.adoption-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: var(--spacing-80);
+  padding-bottom: var(--spacing-80);
   text-align: center;
 }
+  
+.adoption-container .text-container {
+  margin-bottom: var(--spacing-56);
+}
 
+.cats-grid {
+  display: grid;
+  gap: var(--spacing-24);
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+}

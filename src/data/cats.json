@@ -3,6 +3,32 @@
     "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
     "nom": "Perlouille",
     "sexe": "Femelle",
+    "age": 12,
+    "statut": "réservé",
+    "description": "Perlouille, un trésor à quatre pattes qui n’attend que vous ! Perlouille est un chat absolument adorable, au charme irrésistible et au regard qui fait fondre les cœurs. Avec son pelage doux comme une caresse et ses yeux pétillants de malice, il dégage une aura de tendresse qui illumine chaque pièce où il se trouve. Ce petit compagnon est un mélange parfait de douceur et de curiosité : il aime explorer son environnement, mais revient toujours chercher des câlins et des moments de complicité. Ce qui rend Perlouille unique, c’est son caractère équilibré. Il est à la fois joueur et calme, idéal pour une famille ou une personne seule en quête d’un ami fidèle. Ses jeux préférés ? Courir après une petite balle, observer le monde depuis le rebord de la fenêtre, ou se lover dans un plaid moelleux pour une sieste bien méritée. Et quand vient le moment des câlins, préparez-vous à des ronronnements qui apaisent et réchauffent le cœur. Perlouille est sociable et s’adapte facilement. Il aime la présence humaine et saura vous accueillir chaque jour avec douceur et affection. Son regard plein d’amour semble dire : « Je suis prêt à partager ma vie avec toi ». Si vous cherchez un compagnon qui apportera joie, réconfort et une dose quotidienne de bonheur, Perlouille est celui qu’il vous faut. Adopter Perlouille, c’est offrir une seconde chance à un être qui ne demande qu’à aimer et être aimé. Il n’attend qu’une chose : trouver son foyer pour toujours. Alors, êtes-vous prêt à ouvrir votre cœur et votre maison à ce petit rayon de soleil ?",
+    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
+  },
+  {
+    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
+    "nom": "Filipou",
+    "sexe": "Mâle",
+    "statut": "disponible",
+    "maladie": "coryza",
+    "description": "Pas ouf comme nom"
+  },
+  {
+    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
+    "nom": "Nyouki",
+    "age": 1,
+    "sexe": "Mâle",
+    "statut": "réservé",
+    "description": "C’est Nyouki le plus beau",
+    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
+  },
+  {
+    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
+    "nom": "Perlouille",
+    "sexe": "Femelle",
     "statut": "réservé",
     "description": "La méga super mimi perlouille ",
     "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
@@ -13,8 +39,32 @@
     "sexe": "Mâle",
     "statut": "disponible",
     "maladie": "coryza",
-    "description": "Pas ouf comme nom", 
-    "photo": "src/data/images/cats/placeholder.png"
+    "description": "Pas ouf comme nom"
+  },
+  {
+    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
+    "nom": "Nyouki",
+    "age": 1,
+    "sexe": "Mâle",
+    "statut": "réservé",
+    "description": "C’est Nyouki le plus beau",
+    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
+  },
+  {
+    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
+    "nom": "Perlouille",
+    "sexe": "Femelle",
+    "statut": "réservé",
+    "description": "La méga super mimi perlouille ",
+    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
+  },
+  {
+    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
+    "nom": "Filipou",
+    "sexe": "Mâle",
+    "statut": "disponible",
+    "maladie": "coryza",
+    "description": "Pas ouf comme nom"
   },
   {
     "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
