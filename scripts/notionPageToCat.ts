@@ -1,22 +1,62 @@
-import type { NotionCatProperties } from "./notionTypes.ts";
 import type { PageObjectResponse } from "@notionhq/client/build/src/api-endpoints";
+import type { NotionCatProperties } from "./notionTypes";
 import type { Cat } from "../src/types/cats";
-import { v4 as uuidv4 } from "uuid";
 
-export function notionPageToCat(page: PageObjectResponse): Cat {
+/* ---------- Helpers ---------- */
+
+function getPlainText(
+  items?: { plain_text: string }[]
+): string | undefined {
+  if (!items || items.length === 0) return undefined;
+  return items.map((item) => item.plain_text).join("");
+}
+
+function getFilesUrls(
+  files?: NotionCatProperties["Photo"]["files"]
+): string[] {
+  if (!files || files.length === 0) {
+    return ["src/data/images/placeholder.png"];
+  }
+
+  return files.map((file) =>
+    file.type === "file"
+      ? file.file.url
+      : file.external.url
+  );
+}
+
+function getDate(
+  dateProperty?: { date: { start: string | null } | null }
+): string | undefined {
+  return dateProperty?.date?.start ?? undefined;
+}
+
+/* ---------- Mapper ---------- */
+
+export function notionPageToCat(
+  page: PageObjectResponse
+): Omit<Cat, "id"> {
   const props = page.properties as unknown as NotionCatProperties;
 
   return {
-    id: uuidv4(),
-    nom: props.Nom?.title?.[0]?.plain_text ?? "Nom inconnu",
-    age: typeof props.Age?.number === "number" ? props.Age.number : undefined,
+    nom: getPlainText(props.Nom?.title) ?? "Nom inconnu",
+
+    age:
+      typeof props.Age?.number === "number"
+        ? props.Age.number
+        : undefined,
+
     sexe: props.Sexe?.select?.name ?? undefined,
-    statut: props.Statut?.select?.name?.toLowerCase() ?? "en attente",
+
+    statut:
+      props.Statut?.select?.name?.toLowerCase() ?? "en attente",
+
     maladie: props.Maladie?.select?.name ?? undefined,
-    description: props.Description?.rich_text?.[0]?.plain_text ?? undefined,
-    photo:
-      props.Photo?.files?.[0]?.type === "file"
-        ? props.Photo.files[0].file.url
-        : props.Photo?.files?.[0]?.external?.url ?? undefined,
+
+    description: getPlainText(props.Description?.rich_text),
+
+    rescueDate: getDate(props["Recueilli le"]),
+
+    photo: getFilesUrls(props.Photo?.files),
   };
 }

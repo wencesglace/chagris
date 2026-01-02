@@ -29,7 +29,6 @@ export default function Button(props: ButtonProps) {
   const classes = `btn btn-${theme} ${disabled ? "btn--disabled" : ""} ${
     className ?? ""
   }`;
-  console.log(classes);
 
   /* ---------- CAS LIEN ---------- */
   if ("href" in props) {

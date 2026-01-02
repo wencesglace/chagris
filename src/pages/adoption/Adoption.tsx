@@ -5,16 +5,7 @@ import type { Cat } from "../../types/cats";
 import AdoptionHero from "../../components/adoptionHero/AdoptionHero";
 
 export default function Adopt() {
-  const catList: Cat[] = cats.map((c) => ({
-    ...c,
-    id: c.id,
-    age: c.age ?? undefined,
-    maladie: c.maladie ?? undefined,
-    sexe: c.sexe ?? undefined,
-    description: c.description ?? undefined,
-    photo: c.photo ?? undefined,
-    statut: c.statut ?? "en attente",
-  }));
+  const catList = cats as Cat[];
   return (
     <>"
       <AdoptionHero className="layout-full bg-pink" />
