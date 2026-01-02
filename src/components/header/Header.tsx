@@ -22,11 +22,11 @@ export default function Header() {
                 Questions
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className="body1" to="/contact">
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

@@ -5,6 +5,7 @@ import Tag from "../tag/Tag";
 import "./catCard.css";
 
 import CatModal from "../catModal/CatModal";
+import { formatDateLong } from "../../utils/date";
 
 interface CatCardProps {
   cat: Cat;
@@ -55,12 +56,12 @@ export default function CatCard({ cat }: CatCardProps) {
         <div className="cat-info">
           <div className="cat-title">
             <h2 className="cat-name h2-light">{cat.nom}</h2>
-            {cat.rescueDate && 
-            <p className="caption">
-              Arrivé{cat.sexe == "Femelle" && "e"} le {cat.rescueDate}
-            </p>
-            }
-            
+            {cat.rescueDate && (
+              <p className="cat-date caption">
+                Arrivé{cat.sexe == "Femelle" && "e"} le{" "}
+                {formatDateLong(cat.rescueDate)}
+              </p>
+            )}
           </div>
           <Button theme="white" onClick={() => setIsOpen(true)}>
             En savoir plus

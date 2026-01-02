@@ -45,11 +45,6 @@
   margin-bottom: 0;
 }
 
-/* Description */
-.cat-card p {
-  font-size: 0.9rem;
-}
-
 .cat-content {
   display: flex;
   justify-content: space-between;
@@ -100,6 +95,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   gap: 8px;
   padding: 8px 4px;
 }
