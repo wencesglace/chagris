@@ -7,6 +7,10 @@ Note : les numéros font référence à la nuance dans Radix */
   --color-darken-02: hsla(163, 83%, 7%, 0.05); 
   --color-darken-03: hsla(163, 83%, 7%, 0.07); 
   --color-darken-07: hsla(163, 83%, 7%, 0.7); 
+  --color-lighten-01: hsla(0, 0%, 100%, 0.02); 
+  --color-lighten-02: hsla(0, 0%, 100%, 0.05); 
+  --color-lighten-03: hsla(0, 0%, 100%, 0.07); 
+  --color-lighten-07: hsla(0, 0%, 100%, 0.7); 
 
   /* Noir */
   --color-black-09: #032018; /* main color */

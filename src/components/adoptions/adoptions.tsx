@@ -41,7 +41,7 @@ export default function Adoptions() {
         </p>
         <Callout />
       </section>
-      <Button href="" className="btn-pink h2 emphasis">
+      <Button href="/adopt" className="btn-pink h2 emphasis">
         Je souhaite adopter !
       </Button>
     </section>

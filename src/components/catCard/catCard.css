@@ -1,9 +1,9 @@
 /* CatCard */
 .cat-card {
-  border-radius: 20px;
+  display: inline-flex;
+  flex-direction: column;
   overflow: hidden;
   width: 100%;
-  max-width: 360px;
 }
 
 .cat-card .cat-image-wrapper {
@@ -48,19 +48,6 @@
 /* Description */
 .cat-card p {
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Responsive pour petits écrans */
-@media (max-width: 800px) {
-  .cat-card {
-    width: 45%;
-  }
-
-  .cat-card img {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 .cat-content {
@@ -79,16 +66,6 @@
   font-size: 14px;
   color: #777;
   margin: 0;
-}
-
-.cat-actions {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-}
-
-.cat-actions Button {
-  font-weight: 500;
 }
 
 .cat-overlay {
@@ -117,4 +94,36 @@
   height: 80%;
   overflow: scroll;
   text-align: left;
+}
+
+.cat-content .cat-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  padding: 8px 4px;
+}
+
+.cat-content .cat-info h2 {
+  padding-left: 4px;
+}
+
+.cat-content .cat-info .cat-modal-tags {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 4px;
+}
+
+.cat-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4px;
+}
+
+.cat-title Button {
+  font-weight: 500;
 }
