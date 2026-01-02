@@ -33,3 +33,15 @@
 .adoption-hero .content p {
   color: var(--on-surface-default);
 }
+
+@media (max-width: 800px) {
+  .adoption-hero .image {
+  position: absolute;
+  rotate: 10deg;
+  left: 50%;
+  transform: translate(-40%, 90%);
+  height: 100%;
+  width: auto;
+  z-index: 2;
+}
+}

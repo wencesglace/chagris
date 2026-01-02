@@ -3,84 +3,71 @@ import type { Cat } from "../../types/cats";
 import Button from "../button/Button";
 import Tag from "../tag/Tag";
 import "./catCard.css";
-import Icon from "../icon/Icon";
 
-export default function CatCard({
-  nom,
-  age,
-  sexe,
-  statut,
-  maladie,
-  description,
-  photo,
-}: Cat) {
-  const isAvailable = statut === "disponible";
+import CatModal from "../catModal/CatModal";
+
+interface CatCardProps {
+  cat: Cat;
+}
+
+export default function CatCard({ cat }: CatCardProps) {
+  const isAvailable = cat.statut === "disponible";
   console.log(isAvailable);
-  const buttonLabel = {
-    disponible: "Adopter",
-    "en attente": "Bientôt à l'adoption",
-    réservé: "Réservé",
-  }[statut];
-  const catAge = `${age && age.toString()} ${age && age > 1 ? "ans" : "an"}`;
-  const [showInfo, setShowInfo] = useState(false);
-  const sexeIcon = sexe == "Femelle" ? "female" : "male";
+  const catAge = `${cat.age && cat.age.toString()} ${
+    cat.age && cat.age > 1 ? "ans" : "an"
+  }`;
+  const [showInfo] = useState(false);
+  const sexeIcon = cat.sexe == "Femelle" ? "female" : "male";
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <article className={`cat-card ${showInfo ? "show-info" : ""}`}>
-      <div className="cat-image-wrapper">
+      <div className="cat-image-wrapper" onClick={() => setIsOpen(true)}>
         <img
           className="cat-image"
-          src={`${photo ? photo : "src/data/images/cats/placeholder.png"}`}
-          alt={`Photo de ${nom}`}
+          src={`${
+            cat.photo ? cat.photo : "src/data/images/cats/placeholder.png"
+          }`}
+          alt={`Photo de ${cat.nom}`}
         />
 
-        <div className="cat-tags">
-          {age && (
-            <Tag className="tag body1 bg-black" icon="age">
-              {catAge}
-            </Tag>
-          )}
-          {sexe && (
-            <Tag className="tag body1 bg-black" icon={sexeIcon}>
-              {sexe}
-            </Tag>
-          )}
-          {maladie && (
-            <Tag className="tag body1 bg-black" icon="health">
-              {maladie}
-            </Tag>
-          )}
-        </div>
-
-        {description && (
+        {cat.description && (
           <div className="cat-overlay">
-            <p className="cat-description body-1">{description}</p>
+            <p className="cat-description body-1">{cat.description}</p>
           </div>
         )}
       </div>
 
       <div className="cat-content">
         <div className="cat-info">
-          <h3 className="cat-name h3">{nom}</h3>
-        </div>
-
-        <div className="cat-actions">
-          <Button
-            disabled={!isAvailable}
-            onClick={() => {
-              // modal plus tard
-            }}
-          >
-            {buttonLabel}
-          </Button>
-          <Button
-            theme="transparent"
-            onClick={() => {
-              setShowInfo((prev) => !prev);
-            }}
-          >
-            <Icon name="info" />
-          </Button>
+          <div className="cat-modal-tags">
+            {cat.age && (
+              <Tag className="body2 bg-blue" icon="age">
+                {catAge}
+              </Tag>
+            )}
+            {cat.sexe && (
+              <Tag className="body2 bg-blue" icon={sexeIcon}>
+                {cat.sexe}
+              </Tag>
+            )}
+            {cat.maladie && (
+              <Tag className="body2 bg-green" icon="health">
+                {cat.maladie}
+              </Tag>
+            )}
+          </div>
+          <div className="cat-title">
+            <h2 className="cat-name h2-light">{cat.nom}</h2>
+            <Button theme="white" onClick={() => setIsOpen(true)}>
+              En savoir plus
+            </Button>
+            <CatModal
+              cat={cat}
+              isOpen={isOpen}
+              onClose={() => setIsOpen(false)}
+            />
+          </div>
         </div>
       </div>
     </article>

@@ -11,9 +11,9 @@
   border: none;
   background-color: var(--action-bg);
   color: var(--action-text);
-  padding: 12px 16px;
   width: fit-content;
   text-decoration: none;
+  padding: 12px 16px;
 }
 
 .btn:not(.btn--disabled) {
@@ -29,6 +29,10 @@
 
 .btn.fullwidth {
   width: 100%;
+}
+
+.btn.icon-only {
+  padding: 12px;
 }
 
 .btn:not(.btn--disabled):hover {
@@ -80,7 +84,7 @@ button[disabled] {
 .btn-white {
   background-color: var(--action-contrast-bg);
   color: var(--action-contrast-text);
-  border: 2px solid var(--action-border);
+  border: 1px solid var(--action-contrast-text);
 }
 
 .btn-white:not(.btn--disabled):hover {
@@ -123,15 +127,21 @@ button[disabled] {
 
 /* Transparent */
 .btn-transparent {
-  background-color: transparent;
+  background-color: var(--color-lighten-07);
   color: var(--action-transparent-text);
   background-color: var(--action-transparent-bg-default);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
 }
 
 .btn-transparent:not(.btn--disabled):hover {
   background-color: var(--action-transparent-bg-hover);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
 }
 
 .btn-transparent:not(.btn--disabled):active {
   background-color: var(--action-transparent-bg-active);
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
 }
