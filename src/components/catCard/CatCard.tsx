@@ -11,8 +11,6 @@ interface CatCardProps {
 }
 
 export default function CatCard({ cat }: CatCardProps) {
-  const isAvailable = cat.statut === "disponible";
-  console.log(isAvailable);
   const catAge = `${cat.age && cat.age.toString()} ${
     cat.age && cat.age > 1 ? "ans" : "an"
   }`;
@@ -23,11 +21,26 @@ export default function CatCard({ cat }: CatCardProps) {
   return (
     <article className={`cat-card ${showInfo ? "show-info" : ""}`}>
       <div className="cat-image-wrapper" onClick={() => setIsOpen(true)}>
+        <div className="cat-tags">
+          {cat.age && (
+            <Tag className="body2 bg-blue" icon="age">
+              {catAge}
+            </Tag>
+          )}
+          {cat.sexe && (
+            <Tag className="body2 bg-blue" icon={sexeIcon}>
+              {cat.sexe}
+            </Tag>
+          )}
+          {cat.maladie && (
+            <Tag className="body2 bg-green" icon="health">
+              {cat.maladie}
+            </Tag>
+          )}
+        </div>
         <img
           className="cat-image"
-          src={`${
-            cat.photo ? cat.photo : "src/data/images/cats/placeholder.png"
-          }`}
+          src={cat.photo[0]}
           alt={`Photo de ${cat.nom}`}
         />
 
@@ -40,34 +53,23 @@ export default function CatCard({ cat }: CatCardProps) {
 
       <div className="cat-content">
         <div className="cat-info">
-          <div className="cat-modal-tags">
-            {cat.age && (
-              <Tag className="body2 bg-blue" icon="age">
-                {catAge}
-              </Tag>
-            )}
-            {cat.sexe && (
-              <Tag className="body2 bg-blue" icon={sexeIcon}>
-                {cat.sexe}
-              </Tag>
-            )}
-            {cat.maladie && (
-              <Tag className="body2 bg-green" icon="health">
-                {cat.maladie}
-              </Tag>
-            )}
-          </div>
           <div className="cat-title">
             <h2 className="cat-name h2-light">{cat.nom}</h2>
-            <Button theme="white" onClick={() => setIsOpen(true)}>
-              En savoir plus
-            </Button>
-            <CatModal
-              cat={cat}
-              isOpen={isOpen}
-              onClose={() => setIsOpen(false)}
-            />
+            {cat.rescueDate && 
+            <p className="caption">
+              Arrivé{cat.sexe == "Femelle" && "e"} le {cat.rescueDate}
+            </p>
+            }
+            
           </div>
+          <Button theme="white" onClick={() => setIsOpen(true)}>
+            En savoir plus
+          </Button>
+          <CatModal
+            cat={cat}
+            isOpen={isOpen}
+            onClose={() => setIsOpen(false)}
+          />
         </div>
       </div>
     </article>

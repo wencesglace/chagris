@@ -14,8 +14,8 @@ const notion = new Client({
   auth: process.env.NOTION_API_KEY,
 });
 
-const JSON_PATH = path.resolve("../src/data/cats.json");
-const IMG_DIR = path.resolve("../src/data/images/cats");
+const JSON_PATH = path.resolve("src/data/cats.json");
+const IMG_DIR = path.resolve("src/data/images/cats");
 
 // Crée le dossier si nécessaire
 if (!fs.existsSync(IMG_DIR)) {
@@ -49,16 +49,31 @@ export async function fetchCatsFromNotion() {
       const id = item.id;
 
       // Télécharger l'image si elle existe
-      let localPhotoPath: string | undefined;
-      if (cat.photo) {
-        const ext = path.extname(new URL(cat.photo).pathname) || ".jpg";
-        localPhotoPath = path.join(IMG_DIR, `${id}${ext}`);
+      const photos = cat.photo 
+      const localPhotos: string[] = [];
+
+      for (let i = 0; i < photos.length; i++) {
+        const photoUrl = photos[i];
+
+        // 👉 Si c’est le placeholder, on ne télécharge rien
+        if (photoUrl.includes("placeholder.png")) {
+          localPhotos.push(photoUrl);
+          continue;
+        }
+
+        const ext = path.extname(new URL(photoUrl).pathname) || ".jpg";
+        const filename = `${id}-${i}${ext}`;
+
         try {
-          const imgResp = await axios.get(cat.photo, { responseType: "arraybuffer" });
-          fs.writeFileSync(localPhotoPath, imgResp.data);
-        } catch (err) {
-          console.warn(`Impossible de télécharger l'image pour ${cat.nom}:`, err);
-          localPhotoPath = undefined;
+          const imgResp = await axios.get(photoUrl, {
+            responseType: "arraybuffer",
+          });
+
+          fs.writeFileSync(path.join(IMG_DIR, filename), imgResp.data);
+
+          localPhotos.push(`src/data/images/cats/${filename}`);
+        } catch {
+          console.warn(`Image ${i} non récupérée pour ${cat.nom}`);
         }
       }
 
@@ -70,12 +85,16 @@ export async function fetchCatsFromNotion() {
         statut: cat.statut || "en attente",
         maladie: cat.maladie,
         description: cat.description,
-        photo: localPhotoPath,
+        photo: localPhotos,
+        rescueDate: cat.rescueDate ?? undefined,
       });
     }
 
     // Supprimer les images locales obsolètes
-    const validFiles = cats.filter((c) => c.photo).map((c) => path.basename(c.photo!));
+    const validFiles = cats.flatMap((c) =>
+      c.photo && c.photo.map((p) => path.basename(p))
+    );
+
     const existingFiles = fs.readdirSync(IMG_DIR);
     for (const file of existingFiles) {
       if (!validFiles.includes(file)) {
@@ -85,7 +104,7 @@ export async function fetchCatsFromNotion() {
 
     // Écrire le JSON final
     fs.writeFileSync(JSON_PATH, JSON.stringify(cats, null, 2), "utf-8");
-    console.log(`${cats.length} chats écrits`);
+
   } catch (error) {
     console.error("Erreur lors de la récupération des chats :", error);
   }

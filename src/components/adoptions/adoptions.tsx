@@ -23,9 +23,7 @@ export default function Adoptions() {
           <img
             className="cat-media"
             key={cat.nom}
-            src={`${
-              cat.photo ? cat.photo : "src/data/images/cats/placeholder.png"
-            }`}
+            src={cat.photo[0]}
             alt={`Photo de ${cat.nom}`}
           />
         ))}

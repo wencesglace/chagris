@@ -1,78 +1,49 @@
 [
   {
-    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
-    "nom": "Perlouille",
-    "sexe": "Femelle",
-    "age": 12,
-    "statut": "réservé",
-    "description": "Perlouille, un trésor à quatre pattes qui n’attend que vous ! Ce qui rend Perlouille unique, c’est son caractère équilibré. Il est à la fois joueur et calme, idéal pour une famille ou une personne seule en quête d’un ami fidèle. Ses jeux préférés ? Courir après une petite balle, observer le monde depuis le rebord de la fenêtre, ou se lover dans un plaid moelleux pour une sieste bien méritée. Et quand vient le moment des câlins, préparez-vous à des ronronnements qui apaisent et réchauffent le cœur. Perlouille est sociable et s’adapte facilement. Alors, êtes-vous prêt à ouvrir votre cœur et votre maison à ce petit rayon de soleil ?",
-    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
-  },
-  {
-    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
-    "nom": "Filipou",
-    "sexe": "Mâle",
+    "id": "2dcf18be-73c7-8006-bbf0-e5a30e7a8b63",
+    "nom": "Poticha",
+    "age": 23,
     "statut": "disponible",
-    "maladie": "coryza",
-    "description": "Pas ouf comme nom"
+    "maladie": "Coryza",
+    "description": "C’est un poticha",
+    "photo": [
+      "src/data/images/placeholder.png"
+    ]
   },
   {
-    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
+    "id": "2d2f18be-73c7-8177-b4cf-deb237ee2e4a",
     "nom": "Nyouki",
     "age": 1,
     "sexe": "Mâle",
     "statut": "réservé",
     "description": "C’est Nyouki le plus beau",
-    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
+    "photo": [
+      "src/data/images/cats/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-0.jpeg",
+      "src/data/images/cats/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-1.jpeg"
+    ],
+    "rescueDate": "2025-07-09"
   },
   {
-    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
-    "nom": "Perlouille",
+    "id": "2dcf18be-73c7-806c-8d13-ebe31ce4f55d",
+    "nom": "PPT",
+    "age": 15,
     "sexe": "Femelle",
-    "statut": "réservé",
-    "description": "La méga super mimi perlouille ",
-    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
+    "statut": "adopté",
+    "maladie": "FIV",
+    "description": "Future cosmonaute à ses heures pas si perdues",
+    "photo": [
+      "src/data/images/cats/2dcf18be-73c7-806c-8d13-ebe31ce4f55d-0.jpeg"
+    ],
+    "rescueDate": "2012-07-05"
   },
   {
-    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
-    "nom": "Filipou",
-    "sexe": "Mâle",
-    "statut": "disponible",
-    "maladie": "coryza",
-    "description": "Pas ouf comme nom"
-  },
-  {
-    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
-    "nom": "Nyouki",
-    "age": 1,
-    "sexe": "Mâle",
-    "statut": "réservé",
-    "description": "C’est Nyouki le plus beau",
-    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
-  },
-  {
-    "id": "d3d80f23-7d44-435a-9f75-b90711d7a59c",
+    "id": "2d7f18be-73c7-8119-9245-fcc31a3f2845",
     "nom": "Perlouille",
     "sexe": "Femelle",
     "statut": "réservé",
     "description": "La méga super mimi perlouille ",
-    "photo": "src/data/images/cats/d3d80f23-7d44-435a-9f75-b90711d7a59c.jpeg"
-  },
-  {
-    "id": "11aaafee-d0f1-4d16-8d53-ebd146cab774",
-    "nom": "Filipou",
-    "sexe": "Mâle",
-    "statut": "disponible",
-    "maladie": "coryza",
-    "description": "Pas ouf comme nom"
-  },
-  {
-    "id": "8a21114a-887e-4f59-a160-5bc2eace9d78",
-    "nom": "Nyouki",
-    "age": 1,
-    "sexe": "Mâle",
-    "statut": "réservé",
-    "description": "C’est Nyouki le plus beau",
-    "photo": "src/data/images/cats/8a21114a-887e-4f59-a160-5bc2eace9d78.jpeg"
+    "photo": [
+      "src/data/images/cats/2d7f18be-73c7-8119-9245-fcc31a3f2845-0.jpeg"
+    ]
   }
 ]

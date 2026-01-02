@@ -48,7 +48,7 @@ export default function CatModal({ cat, isOpen, onClose }: CatModalProps) {
           </div>
         </div>
         <div className="cat-modal-image">
-          <img src={`${cat.photo ? cat.photo : "src/data/images/cats/placeholder.png"}`} />
+          <img src={cat.photo[0]}/>
         </div>
       </div>
     </Modal>
