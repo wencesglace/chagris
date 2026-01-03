@@ -20,7 +20,7 @@
   grid-auto-rows: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .cats-grid {
   display: grid;
   gap: var(--spacing-40);

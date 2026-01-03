@@ -34,3 +34,19 @@
   margin-bottom: var(--spacing-16);
   color: var(--on-surface-blue-contrasted);
 }
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: 480px;
+  }
+
+  .hero .image {
+    position: absolute;
+    rotate: 10deg;
+    left: 50%;
+    transform: translate(-30%, 110%);
+    height: 50%;
+    width: auto;
+    z-index: 2;
+  }
+}

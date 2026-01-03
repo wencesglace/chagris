@@ -25,25 +25,6 @@ body {
   --layout-padding-desktop: 40px;
 }
 
-/* Paddings responsives */
-@media (min-width: 768px) {
-  :root {
-    --layout-padding-current: var(--layout-padding-tablet);
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-    --layout-padding-current: var(--layout-padding-desktop);
-  }
-}
-
-@media (max-width: 800px) {
-  :root {
-    --layout-padding-current: var(--layout-padding-mobile);
-  }
-}
-
 /* 100% réel – aucun padding */
 .layout-full {
   width: 100%;
@@ -74,4 +55,56 @@ body {
   display: inherit;
   flex-direction: inherit;
   gap: var(--spacing-12);
+}
+
+/* Paddings responsives */
+@media (min-width: 800px) {
+  :root {
+    --layout-padding-current: var(--layout-padding-tablet);
+  }
+
+  /* 100% lisible – paddings + largeur fluide */
+  .layout-wide {
+    padding: var(--layout-padding-tablet);
+  }
+
+  /* Zone de lecture resserrée */
+  .layout-narrow {
+    padding: var(--layout-padding-tablet);
+  }
+
+  /* Zone de lecture resserrée */
+  .layout-half {
+    padding: var(--layout-padding-tablet);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --layout-padding-current: var(--layout-padding-desktop);
+  }
+}
+
+@media (max-width: 799px) {
+  :root {
+    --layout-padding-current: var(--layout-padding-mobile);
+  }
+  
+  /* 100% lisible – paddings + largeur fluide */
+  .layout-wide {
+    max-width: 100%;
+    padding: var(--layout-padding-mobile);
+  }
+
+  /* Zone de lecture resserrée */
+  .layout-narrow {
+    max-width: 100%;
+    padding: var(--layout-padding-mobile);
+  }
+
+  /* Zone de lecture resserrée */
+  .layout-half {
+    max-width: 100%;
+    padding: var(--layout-padding-mobile);
+  }
 }
