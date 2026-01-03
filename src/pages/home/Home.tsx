@@ -17,12 +17,20 @@ export default function Home() {
       <Hero className="layout-full bg-blue-contrasted" />
       {/* Section TextCards */}
       <section className="text-cards-container layout-full bg-yellow wavy-top">
-        <h1 className="layout-narrow h1">
-          Nous veillons sur les chats libres d’Isère depuis plus de 20 ans.
-        </h1>
-        <Button href="" className="btn-pink h2 emphasis">
-          Nous contacter
-        </Button>
+        <div className="heading-container layout-wide">
+          <div className="heading-text">
+            <p className="body1">
+              Nous veillons sur les chats libres depuis plus de 20 ans.
+            </p>
+            <h1 className="h1">Nos actions au quotidien</h1>
+          </div>
+          <div className="heading-action">
+            <Button href="" className="btn-pink h2 emphasis">
+              Nous contacter
+            </Button>
+          </div>
+        </div>
+
         <section className="text-cards-section layout-wide">
           {textCards.map((card, i) => (
             <TextCard key={i} {...card} />
@@ -42,8 +50,8 @@ export default function Home() {
       </section>
 
       {/* Sponsors */}
-      <section className="layout-full bg-green"> 
-        <Sponsors/>
+      <section className="layout-full bg-green">
+        <Sponsors />
       </section>
     </>
   );

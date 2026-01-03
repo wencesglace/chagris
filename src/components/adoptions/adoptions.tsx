@@ -17,7 +17,7 @@ export default function Adoptions() {
   }, []);
 
   return (
-    <section className="container main layout-narrow">
+    <section className="adoption-container main layout-narrow">
       <div className="cat-avatars">
         {cats.slice(0, 3).map((cat) => (
           <img
@@ -28,8 +28,8 @@ export default function Adoptions() {
           />
         ))}
       </div>
-      <section className="text-container">
-        <h1 className="h1">Ils cherchent leur futur foyer</h1>
+      <div className="heading-text">
+        <h1 className="h1">Ils cherchent <br/> leur futur foyer</h1>
         <p className="body1">
           Nous croyons que chaque chat mérite un foyer aimant et sûr. En
           adoptant un chat avec nous, vous offrez une nouvelle chance à un
@@ -38,9 +38,9 @@ export default function Adoptions() {
           compagnon.
         </p>
         <Callout />
-      </section>
+      </div>
       <Button href="/adopt" className="btn-pink h2 emphasis">
-        Je souhaite adopter !
+        Je souhaite adopter
       </Button>
     </section>
   );

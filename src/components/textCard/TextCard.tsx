@@ -1,9 +1,12 @@
 // Les cartes descriptives des actions de l'asso avec quelques liens optionnels
 
 import Button from "../button/Button";
+import Icon, { type IconName } from "../icon/Icon";
 import "./textCard.css";
 
 export type TextCardProps = {
+  icon?: IconName;
+
   title: string;
   description: string;
 
@@ -17,6 +20,8 @@ export type TextCardProps = {
 };
 
 export default function TextCard({
+  icon,
+
   title,
   description,
   theme,
@@ -30,6 +35,7 @@ export default function TextCard({
   const classes = `text-card ${theme}`;
   return (
     <div className={classes}>
+      {icon && <Icon name={icon} size={40}/>}
       <div className="text-card-content">
         <h2 className="h2">{title}</h2>
         <p>{description}</p>
