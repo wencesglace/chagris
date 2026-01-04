@@ -6,10 +6,10 @@ import {
   IconReportMedical,
   IconInfoCircle,
   IconX,
-  IconBandage,
-  IconHomeHeart,
-  IconShoppingCart,
-  IconTag
+  IconBrandFacebookFilled,
+  IconBrandInstagramFilled,
+  IconBrandTiktokFilled,
+  IconExternalLink,
 } from "@tabler/icons-react";
 import "./icon.css";
 
@@ -21,10 +21,10 @@ const icons = {
   age: IconCake,
   info: IconInfoCircle,
   close: IconX,
-  care: IconBandage,
-  house: IconHomeHeart,
-  cart: IconShoppingCart,
-  tag: IconTag,
+  facebook: IconBrandFacebookFilled,
+  tiktok: IconBrandTiktokFilled,
+  instagram: IconBrandInstagramFilled,
+  extLink: IconExternalLink,
 };
 
 export type IconName = keyof typeof icons;

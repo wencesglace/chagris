@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.wavy-top::before {
+.wavy::before {
   content: "";
   position: absolute;
   z-index: 3;
@@ -12,6 +12,10 @@
   height: 12px; /* hauteur de la vague */
 }
 
-.wavy-top-white-blue::before {
-    background: url('/src/assets/waves/top-wave-white-blue.svg') repeat-x; 
+.wavy-pink-blue::before {
+    background: url('vectors/waves/wave-pink-blue.svg') repeat-x; 
+}
+
+.wavy-yellow-pink::before {
+    background: url('public/vectors/waves/wave-yellow-pink.svg') repeat-x; 
 }

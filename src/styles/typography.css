@@ -32,27 +32,24 @@
   font-family: "Titan One", sans-serif;
   font-size: 44px;
   line-height: 120%;
-  letter-spacing: 0.9;
 }
 
 .h2 {
   font-family: "Titan One", sans-serif;
   font-size: 32px;
   line-height: 120%;
-  letter-spacing: 0.9;
 }
 
 .h3 {
   font-family: "Titan One", sans-serif;
   font-size: 24px;
   line-height: 120%;
-  letter-spacing: 0.9;
 }
 
-.subtitle-1 {
+.subtitle1 {
   font-family: "Aeonik", sans-serif;
   font-weight: 700;
-  font-size: 240x;
+  font-size: 24px;
   line-height: 140%;
 }
 
@@ -87,4 +84,64 @@
   font-family: "Aeonik", sans-serif;
   font-size: 12px;
   line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .h1 {
+    font-family: "Titan One", sans-serif;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .h2 {
+    font-family: "Titan One", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .h3 {
+    font-family: "Titan One", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .subtitle1 {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .body1 {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .body1-bold {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .body2 {
+    font-family: "Aeonik", sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .body2-bold {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .caption {
+    font-family: "Aeonik", sans-serif;
+    font-size: 11px;
+    line-height: 120%;
+  }
 }

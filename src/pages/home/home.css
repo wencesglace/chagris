@@ -1,6 +1,7 @@
 /* Container global */
 main,
 section {
+  position: relative;
   gap: var(--gap-section-unrelated);
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
@@ -11,62 +12,11 @@ section {
   padding-bottom: var(--padding-section);
 }
 
-.text-cards-header {
+.heading {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  gap: var(--gap-section-related);
-}
-
-.text-cards-header h1 {
-  color: var(--on-surface-blue);
-}
-
-.text-cards-header p {
-  color: var(--on-surface-default);
-}
-
-.text-cards-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: var(--spacing-40);
-  margin-bottom: -12px;
-  gap: var(--gap-section-unrelated);
-}
-
-.text-cards-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: var(--gap-section-related);
-  grid-row-gap: var(--gap-section-related);
-}
-
-@media (max-width: 1200px) {
-  .text-cards-section {
-    column-count: 2;
-    column-gap: var(--spacing-32);
-  }
-}
-
-@media (max-width: 800px) {
-  .text-cards-section {
-    column-count: 1;
-    column-gap: var(--spacing-24);
-  }
-}
-
-@media (max-width: 800px) {
-  .text-cards-section {
-    column-count: 1;
-  }
-}
-
-.cat-avatars-container {
-  position: relative;
-  margin-top: -12px;
+  gap: var(--gap-subsection-related);
 }

@@ -1,67 +1,61 @@
 // Les cartes descriptives des actions de l'asso avec quelques liens optionnels
 
 import Button from "../button/Button";
-import Icon, { type IconName } from "../icon/Icon";
 import "./textCard.css";
 
 export type TextCardProps = {
-  icon?: IconName;
-
+  id: string;
+  type: "text" | "image";
   title: string;
-  description: string;
-
-  theme: "green" | "pink" | "blue"; // Thème de la carte
-
-  primaryButtonLabel?: string; // L'action principale (optionnelle)
-  primaryButtonHref?: string; // Lien de l'action principale
-
-  secondaryButtonLabel?: string; // L'action secondaire (optionnelle)
-  secondaryButtonHref?: string; // Lien de l'action secondaire
+  description?: string;
+  theme:
+    | "green"
+    | "pink"
+    | "blue"
+    | "green-contrasted"
+    | "pink-contrasted"
+    | "blue-contrasted"
+    | "image";
+  imgSrc?: string;
+  primaryButtonLabel?: string;
+  primaryButtonHref?: string;
 };
 
 export default function TextCard({
-  icon,
-
+  id,
+  type,
   title,
   description,
   theme,
-
+  imgSrc,
   primaryButtonLabel,
   primaryButtonHref,
-
-  secondaryButtonLabel,
-  secondaryButtonHref,
 }: TextCardProps) {
-  const classes = `text-card ${theme}`;
-  return (
-    <div className={classes}>
-      {icon && <Icon name={icon} size={40}/>}
-      <div className="text-card-content">
-        <h2 className="h2">{title}</h2>
-        <p>{description}</p>
+  const classes = `text-card ${theme} div-${id} `;
+  if (type === "image" && imgSrc) {
+    // Image card
+    return (
+      <div className={`text-card image div-${id}`}>
+        <img src={imgSrc} alt="" className="text-card-image" />
       </div>
-      {(primaryButtonLabel || secondaryButtonLabel) && (
-        <div className="text-card-actions">
-          {primaryButtonLabel && (
-            <a href={primaryButtonHref}>
-              <Button href={primaryButtonHref} className="fullwidth body1">
-                {primaryButtonLabel}
-              </Button>
-            </a>
-          )}
-          {secondaryButtonLabel && (
-            <a href={secondaryButtonHref}>
-              <Button
-                href={secondaryButtonHref}
-                theme="transparent"
-                className="fullwidth body1"
-              >
-                {secondaryButtonLabel}
-              </Button>
-            </a>
-          )}
+    );
+  } else {
+    // Text card
+    return (
+      <div className={classes}>
+        <div className="text-card-content">
+          <h3 className="h3">{title}</h3>
+          <p className="body1">{description}</p>
         </div>
-      )}
-    </div>
-  );
+
+        {primaryButtonLabel  && (
+          <div className="text-card-actions">
+            <Button href={primaryButtonHref} className={`fullwidth body1 btn-${theme}`}>
+              {primaryButtonLabel}
+            </Button>
+          </div>
+        )}
+      </div>
+    );
+  }
 }

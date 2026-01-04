@@ -23,11 +23,12 @@
   --spacing-80: 80px;
 
   /* paddings verticaux sections */
-  --padding-section: 80px;
+  --padding-section: 56px;
+  --padding-subsection: 24px;
   
   /* gaps */
-  --gap-section-unrelated: 64px;
+  --gap-section-unrelated: 56px;
   --gap-section-related: 32px;
   --gap-subsection-unrelated: 24px;
-  --gap-subsection-related: 8px;
+  --gap-subsection-related: 12px;
 }
