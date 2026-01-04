@@ -71,7 +71,7 @@ export async function fetchCatsFromNotion() {
 
           fs.writeFileSync(path.join(IMG_DIR, filename), imgResp.data);
 
-          localPhotos.push(`public/images/adoptions/${filename}`);
+          localPhotos.push(`images/adoptions/${filename}`);
         } catch {
           console.warn(`Image ${i} non récupérée pour ${cat.nom}`);
         }
