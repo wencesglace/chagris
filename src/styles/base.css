@@ -108,3 +108,7 @@ body {
     padding: var(--layout-padding-mobile);
   }
 }
+
+.no-padding {
+  padding:0px;
+}

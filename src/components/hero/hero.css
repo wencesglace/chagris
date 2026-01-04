@@ -5,20 +5,20 @@
   justify-content: center;
   text-align: center;
   overflow: hidden; /* évite que l'image déborde */
-  min-height: 640px;
+  min-height: 560px;
 }
 
 .hero .logo {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
 }
 
 /* Image derrière le texte */
 .hero .image {
   position: absolute;
-  rotate: 10deg;
   left: 50%;
-  transform: translate(-40%, 75%);
+  transform: translate(-50%, 65%);
   height: 65%;
   width: auto;
   z-index: 2;
@@ -26,8 +26,6 @@
 
 .hero .content {
   position: relative;
-  padding-top: var(--spacing-64);
-  padding-bottom: var(--spacing-40);
 }
 
 .hero .content p {
