@@ -13,9 +13,9 @@
 }
 
 .wavy-pink-blue::before {
-    background: url('vectors/waves/wave-pink-blue.svg') repeat-x; 
+    background: url('/vectors/waves/wave-pink-blue.svg') repeat-x; 
 }
 
 .wavy-yellow-pink::before {
-    background: url('public/vectors/waves/wave-yellow-pink.svg') repeat-x; 
+    background: url('/public/vectors/waves/wave-yellow-pink.svg') repeat-x; 
 }
