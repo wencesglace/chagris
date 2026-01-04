@@ -4,7 +4,7 @@ import CatAvatar from "../../components/adoptions/adoptions";
 import Sponsors from "../../components/sponsors/Sponsors";
 import { behavior } from "../../data/behavior.mock";
 import "./home.css";
-import TextCards from "../../components/textCards/TextCards";
+import TextCardContainer from "../../components/textCardContainer/textCardContainer";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       />
 
       {/* Section TextCards */}
-      <TextCards />
+      <TextCardContainer />
       
 
       {/* Chats à l'adoption */}

@@ -1,7 +1,7 @@
 // encart un peu plus léger
 import Button from '../button/Button';
 import TextCard from '../textCard/TextCard';
-import './textCards.css';
+import './textCardContainer.css';
 import { textCardsList } from "../../data/textCardsList.mock";
 
 type textCardsProps = {
