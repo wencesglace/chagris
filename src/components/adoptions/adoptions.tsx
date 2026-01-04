@@ -10,7 +10,7 @@ export default function Adoptions() {
   const catList = cats as Cat[];
 
   return (
-    <section className="container main layout-narrow">
+    <section className="adoption-container main layout-narrow">
       <div className="cat-avatars">
         {catList.slice(0, 3).map((cat) => (
           <img
@@ -21,20 +21,28 @@ export default function Adoptions() {
           />
         ))}
       </div>
-      <section className="text-container">
-        <h1 className="h1">Ils cherchent leur futur foyer</h1>
-        <p className="body1">
+      <div className="heading">
+        <h1 className="h2">
+          {catList[0].nom}, {catList[1].nom} et bien d'autres <br />
+          cherchent leur futur foyer
+        </h1>
+        <p className="body1 layout-half">
           Nous croyons que chaque chat mérite un foyer aimant et sûr. En
           adoptant un chat avec nous, vous offrez une nouvelle chance à un
           animal qui a connu la vie dans la rue. Explorez les profils de nos
           chats disponibles, découvrez leurs histoires et trouvez votre futur
           compagnon.
         </p>
+        <div className="actions-container">
+          <Button href="/adopt" theme="transparent" className="subtitle1">
+            Contacter l'association
+          </Button>
+          <Button href="/adopt" className="subtitle1">
+            Voir les adoptions
+          </Button>
+        </div>
         <Callout />
-      </section>
-      <Button href="/adopt" className="btn-pink h2 emphasis">
-        Je souhaite adopter !
-      </Button>
+      </div>
     </section>
   );
 }

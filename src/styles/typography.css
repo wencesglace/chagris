@@ -5,11 +5,10 @@
 /* 1. Fonts */
 /* Fonts Boulder */
 @font-face {
-  font-family: "Boulder";
-  src: url("fonts/MyFont/Boulder/Boulder-Regular.otf") format("otf");
+  font-family: "Titan One";
+  src: url("fonts/MyFont/TitanOne/TitanOne-Regular.ttf");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Fonts Aeonik */
@@ -29,72 +28,120 @@
   font-display: swap;
 }
 
-/* Typographies */
-.h1-hero {
-  font-family: "Boulder", sans-serif;
-  font-size: 80px;
-  line-height: 110%;
-  letter-spacing: 0.5px;
-  margin-bottom: var(--spacing-80);
-}
-
 .h1 {
-  font-family: "Boulder", sans-serif;
-  font-size: 40px;
-  line-height: 110%;
-  letter-spacing: 0.7px;
-  margin-bottom: var(--spacing-32);
+  font-family: "Titan One", sans-serif;
+  font-size: 44px;
+  line-height: 120%;
 }
 
 .h2 {
-  font-family: "Boulder", sans-serif;
-  font-size: 24px;
-  line-height: 120%;
-  letter-spacing: 0.6px;
-}
-
-.h2-light {
-  font-family: "Aeonik", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
+  font-family: "Titan One", sans-serif;
+  font-size: 32px;
   line-height: 120%;
 }
 
 .h3 {
-  font-family: "Aeonik", sans-serif;
-  font-size: 20px;
+  font-family: "Titan One", sans-serif;
+  font-size: 24px;
   line-height: 120%;
 }
 
-.h3-bold {
+.subtitle1 {
   font-family: "Aeonik", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 120%;
+  font-size: 24px;
+  line-height: 140%;
 }
 
 .body1 {
   font-family: "Aeonik", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 140%;
 }
 
 .body1-bold {
   font-family: "Aeonik", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 140%;
 }
 
 .body2 {
   font-family: "Aeonik", sans-serif;
   font-size: 14px;
-  line-height: 120%;
+  line-height: 140%;
+}
+
+.body2-bold {
+  font-family: "Aeonik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
 }
 
 .caption {
   font-family: "Aeonik", sans-serif;
   font-size: 12px;
   line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  .h1 {
+    font-family: "Titan One", sans-serif;
+    font-size: 32px;
+    line-height: 120%;
+  }
+
+  .h2 {
+    font-family: "Titan One", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .h3 {
+    font-family: "Titan One", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .subtitle1 {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .body1 {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .body1-bold {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .body2 {
+    font-family: "Aeonik", sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .body2-bold {
+    font-family: "Aeonik", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .caption {
+    font-family: "Aeonik", sans-serif;
+    font-size: 11px;
+    line-height: 120%;
+  }
 }

@@ -3,54 +3,89 @@
   flex-direction: column;
   gap: var(--spacing-32);
   background: var(--surface-default);
-  padding: 40px 32px 32px 32px;
-  border-radius: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 24px;
   break-inside: avoid;
-  margin-bottom: var(--spacing-32);
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .text-card.image {
+   display: none;
+  }
 }
 
 .text-card.blue {
   background: var(--surface-blue);
-  border: 2px solid var(--on-surface-blue);
   color: var(--on-surface-default);
 }
 
-.text-card.blue h2 {
+.text-card.blue h3 {
   color: var(--on-surface-blue);
+}
+
+.text-card.blue-contrasted {
+  background: var(--surface-blue-contrasted);
+  color: var(--on-surface-default-contrasted);
+}
+
+.text-card.blue-contrasted h3 {
+  color: var(--on-surface-blue-contrasted);
 }
 
 .text-card.pink {
   background: var(--surface-pink);
-  border: 2px solid var(--on-surface-pink);
   color: var(--on-surface-default);
 }
 
-.text-card.pink h2 {
+.text-card.pink h3 {
   color: var(--on-surface-pink);
+}
+
+.text-card.pink-contrasted {
+  background: var(--surface-pink-contrasted);
+  color: var(--on-surface-default-contrasted);
+}
+
+.text-card.pink-contrasted h3 {
+  color: var(--on-surface-blue-contrasted);
 }
 
 .text-card.green {
   background: var(--surface-green);
-  border: 2px solid var(--on-surface-green);
   color: var(--on-surface-default);
 }
 
-.text-card.green h2 {
+.text-card.green h3 {
   color: var(--on-surface-green);
+}
+
+.text-card.green-contrasted {
+  background: var(--surface-green-contrasted);
+  color: var(--on-surface-default-contrasted);
+}
+
+.text-card.green-contrasted h3 {
+  color: var(--on-surface-green-contrasted);
 }
 
 .text-card-content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-16);
+  gap: 28px;
 }
 
-.text-card-actions {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-8);
+.text-card.image {
+  padding: 0;
+  overflow: hidden;
 }
 
-.text-card p {
-  margin-bottom: 1rem;
+.text-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

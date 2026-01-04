@@ -1,22 +1,30 @@
 import {
-  BirthdayCake,
-  Female,
-  Male,
-  NavArrowDown,
-  PharmacyCrossTag,
-  InfoCircle,
-  Xmark,
-} from "iconoir-react";
+  IconCake,
+  IconGenderFemale,
+  IconGenderMale,
+  IconChevronDown,
+  IconReportMedical,
+  IconInfoCircle,
+  IconX,
+  IconBrandFacebookFilled,
+  IconBrandInstagramFilled,
+  IconBrandTiktokFilled,
+  IconExternalLink,
+} from "@tabler/icons-react";
 import "./icon.css";
 
 const icons = {
-  navArrowDown: NavArrowDown,
-  female: Female,
-  male: Male,
-  health: PharmacyCrossTag,
-  age: BirthdayCake,
-  info: InfoCircle,
-  close: Xmark,
+  navArrowDown: IconChevronDown,
+  female: IconGenderFemale,
+  male: IconGenderMale,
+  health: IconReportMedical,
+  age: IconCake,
+  info: IconInfoCircle,
+  close: IconX,
+  facebook: IconBrandFacebookFilled,
+  tiktok: IconBrandTiktokFilled,
+  instagram: IconBrandInstagramFilled,
+  extLink: IconExternalLink,
 };
 
 export type IconName = keyof typeof icons;
@@ -25,22 +33,19 @@ type IconProps = {
   name: IconName;
   size?: number | string;
   className?: string;
-  strokeWidth?: number;
 };
 
 export default function Icon({
   name,
   className,
-  strokeWidth = 2,
   size,
 }: IconProps) {
   const Component = icons[name];
   const iconSize = size ? size : "1em";
   return (
     <Component
-      strokeWidth={strokeWidth}
       className={className}
-       width={iconSize} height={iconSize} 
+       size={iconSize}
     />
   );
 }

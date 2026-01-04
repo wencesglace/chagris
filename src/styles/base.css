@@ -16,9 +16,9 @@ body {
 
 /* Variables de layout */
 :root {
-  --layout-max-width: 1200px;
-  --layout-narrow-max-width: 800px;
-  --layout-half-max-width: 600px;
+  --layout-max-width: 1440px;
+  --layout-narrow-max-width: 1024px;
+  --layout-half-max-width: 720px;
 
   --layout-padding-mobile: 16px;
   --layout-padding-tablet: 24px;
@@ -89,7 +89,7 @@ body {
   :root {
     --layout-padding-current: var(--layout-padding-mobile);
   }
-  
+
   /* 100% lisible – paddings + largeur fluide */
   .layout-wide {
     max-width: 100%;
@@ -106,5 +106,11 @@ body {
   .layout-half {
     max-width: 100%;
     padding: var(--layout-padding-mobile);
+  }
+}
+
+@media (min-width: 1200px) {
+  .no-padding {
+    padding: 0px;
   }
 }
