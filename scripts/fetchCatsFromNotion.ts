@@ -15,7 +15,7 @@ const notion = new Client({
 });
 
 const JSON_PATH = path.resolve("src/data/cats.json");
-const IMG_DIR = path.resolve("src/data/images/cats");
+const IMG_DIR = path.resolve("public/images/adoptions");
 
 // Crée le dossier si nécessaire
 if (!fs.existsSync(IMG_DIR)) {
@@ -71,7 +71,7 @@ export async function fetchCatsFromNotion() {
 
           fs.writeFileSync(path.join(IMG_DIR, filename), imgResp.data);
 
-          localPhotos.push(`src/data/images/cats/${filename}`);
+          localPhotos.push(`public/images/adoptions/${filename}`);
         } catch {
           console.warn(`Image ${i} non récupérée pour ${cat.nom}`);
         }

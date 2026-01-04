@@ -8,7 +8,7 @@ type WaveProps = {
 const Wave: React.FC<WaveProps> = ({ position = "bottom", className = "" }) => {
   return (
     <div className={`wave-container ${position} ${className}`}>
-      <img src="/src/assets/wave-bottom.svg" alt="Décor vague" />
+      <img src="vectors/waves/wave-bottom.svg" alt="Décor vague" />
     </div>
   );
 };

@@ -13,14 +13,14 @@ export default function Hero({ className }: HeroProps) {
           des chats des rues.
         </p>
         <img
-          src="src/assets/logo/logo-white.png"
+          src="images/logo-white.png"
           alt="Logo"
           className="logo"
         />
         
       </div>
       <img
-        src="src/components/hero/chartreux.png"
+        src="images/chartreux.png"
         alt="Chats"
         className="image"
       />
