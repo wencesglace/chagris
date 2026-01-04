@@ -16,7 +16,7 @@ export default function Hero({ className }: HeroProps) {
         </section>
       </div>
       <img
-        src="src/components/adoptionHero/chat_roux.png"
+        src="images/chat_roux.png"
         alt="Chats"
         className="image"
       />

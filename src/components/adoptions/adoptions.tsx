@@ -2,24 +2,17 @@
 
 import Button from "../button/Button";
 import type { Cat } from "../../types/cats";
-import { useEffect, useState } from "react";
 import "./adoptions.css";
+import cats from "../../data/cats.json";
 import Callout from "../callout/Callout";
 
 export default function Adoptions() {
-  const [cats, setCats] = useState<Cat[]>([]);
-
-  useEffect(() => {
-    fetch("src/data/cats.json")
-      .then((res) => res.json())
-      .then(setCats)
-      .catch(console.error);
-  }, []);
+  const catList = cats as Cat[];
 
   return (
     <section className="adoption-container main layout-narrow">
       <div className="cat-avatars">
-        {cats.slice(0, 3).map((cat) => (
+        {catList.slice(0, 3).map((cat) => (
           <img
             className="cat-media"
             key={cat.nom}

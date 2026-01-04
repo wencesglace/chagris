@@ -6,7 +6,7 @@
 /* Fonts Boulder */
 @font-face {
   font-family: "Titan One";
-  src: url("/fonts/MyFont/TitanOne/TitanOne-Regular.ttf");
+  src: url("fonts/MyFont/TitanOne/TitanOne-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 /* Fonts Aeonik */
 @font-face {
   font-family: "Aeonik";
-  src: url("/fonts/MyFont/Aeonik/Aeonik-Medium.otf") format("otf");
+  src: url("fonts/MyFont/Aeonik/Aeonik-Medium.otf") format("otf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "Aeonik";
-  src: url("/fonts/MyFont/Aeonik/Aeonik-Bold.otf") format("otf");
+  src: url("fonts/MyFont/Aeonik/Aeonik-Bold.otf") format("otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

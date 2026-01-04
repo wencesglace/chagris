@@ -15,7 +15,7 @@ function getFilesUrls(
   files?: NotionCatProperties["Photo"]["files"]
 ): string[] {
   if (!files || files.length === 0) {
-    return ["src/data/images/placeholder.png"];
+    return ["images/adoptions/placeholder.png"];
   }
 
   return files.map((file) =>

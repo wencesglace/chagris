@@ -7,7 +7,7 @@
     "maladie": "Coryza",
     "description": "C’est un poticha",
     "photo": [
-      "src/data/images/placeholder.png"
+      "images/adoptions/placeholder.png"
     ]
   },
   {
@@ -18,8 +18,8 @@
     "statut": "réservé",
     "description": "C’est Nyouki le plus beau",
     "photo": [
-      "src/data/images/cats/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-0.jpeg",
-      "src/data/images/cats/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-1.jpeg"
+      "images/adoptions/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-0.jpeg",
+      "images/adoptions/2d2f18be-73c7-8177-b4cf-deb237ee2e4a-1.jpeg"
     ],
     "rescueDate": "2025-07-09"
   },
@@ -32,7 +32,7 @@
     "maladie": "FIV",
     "description": "Future cosmonaute à ses heures pas si perdues",
     "photo": [
-      "src/data/images/cats/2dcf18be-73c7-806c-8d13-ebe31ce4f55d-0.jpeg"
+      "images/adoptions/2dcf18be-73c7-806c-8d13-ebe31ce4f55d-0.jpeg"
     ],
     "rescueDate": "2012-07-05"
   },
@@ -42,6 +42,8 @@
     "sexe": "Femelle",
     "statut": "réservé",
     "description": "La méga super mimi perlouille ",
-    "photo": []
+    "photo": [
+      "images/adoptions/2d7f18be-73c7-8119-9245-fcc31a3f2845-0.jpeg"
+    ]
   }
 ]
