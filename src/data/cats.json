@@ -42,6 +42,8 @@
     "sexe": "Femelle",
     "statut": "réservé",
     "description": "La méga super mimi perlouille ",
-    "photo": []
+    "photo": [
+      "src/data/images/cats/2d7f18be-73c7-8119-9245-fcc31a3f2845-0.jpeg"
+    ]
   }
 ]
