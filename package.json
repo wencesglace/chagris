@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "tsx scripts/fetchCatsFromNotion.ts",
+    "fetch:notion": "tsx scripts/fetchCatsFromNotion.ts",
+    "prebuild": "npm run fetch:notion",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
