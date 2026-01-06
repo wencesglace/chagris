@@ -1,7 +1,7 @@
 import React from "react";
 import "./button.css";
 
-type ThemeColor = "green" | "pink" | "blue" | "black" | "transparent" | "white";
+type ThemeColor = "green" | "pink" | "blue" | "black" | "transparent" | "outlined";
 
 type CommonProps = {
   theme?: ThemeColor;
