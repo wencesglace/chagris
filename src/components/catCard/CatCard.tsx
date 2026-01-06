@@ -63,7 +63,7 @@ export default function CatCard({ cat }: CatCardProps) {
               </p>
             )}
           </div>
-          <Button theme="white" onClick={() => setIsOpen(true)}>
+          <Button theme="outlined" onClick={() => setIsOpen(true)}>
             En savoir plus
           </Button>
           <CatModal
