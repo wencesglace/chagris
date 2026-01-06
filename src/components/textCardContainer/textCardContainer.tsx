@@ -65,7 +65,7 @@ export default function textCards({className=""}: textCardsProps) {
                 </p>
               </div>
             </div>
-            <Button href="" className="btn-pink h3 emphasis">
+            <Button href="" className="btn-pink subtitle1 emphasis">
               Contacter l'association
             </Button>
           </div>

@@ -34,10 +34,10 @@ export default function Adoptions() {
           compagnon.
         </p>
         <div className="actions-container">
-          <Button href="/adopt" theme="transparent" className="subtitle1">
+          <Button href="/adopt" theme="outlined" className="body1">
             Contacter l'association
           </Button>
-          <Button href="/adopt" className="subtitle1">
+          <Button href="/adopt" className="body1">
             Voir les adoptions
           </Button>
         </div>
