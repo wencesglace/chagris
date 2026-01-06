@@ -1,5 +1,15 @@
 [
   {
+    "id": "2def18be-73c7-81d6-86e9-eb890c1da176",
+    "nom": "Chaussette",
+    "sexe": "Femelle",
+    "statut": "disponible",
+    "description": "C'est chaussette",
+    "photo": [
+      "images/adoptions/2def18be-73c7-81d6-86e9-eb890c1da176-0.jpeg"
+    ]
+  },
+  {
     "id": "2dcf18be-73c7-8006-bbf0-e5a30e7a8b63",
     "nom": "Poticha",
     "age": 23,
