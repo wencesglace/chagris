@@ -2,7 +2,7 @@ name: Fetch cats from Notion
 
 on:
   schedule:
-    - cron: '0 1 * * *' # tous les jours à 1h UTC
+    - cron: '0 1 * * 1,5' # tous les jours à 1h UTC
   workflow_dispatch:
 
 jobs:
