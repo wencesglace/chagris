@@ -22,17 +22,17 @@ export default function CatModal({ cat, isOpen, onClose }: CatModalProps) {
               <h2 className="h2">{cat.nom}</h2>
               <div className="cat-modal-tags">
                 {cat.age && (
-                  <Tag className="tag body1 bg-blue" icon="age">
+                  <Tag className="tag body2 bg-blue-contrasted" icon="age">
                     {catAge}
                   </Tag>
                 )}
                 {cat.sexe && (
-                  <Tag className="tag body1 bg-blue" icon={sexeIcon}>
+                  <Tag className="tag body2 bg-blue-contrasted" icon={sexeIcon}>
                     {cat.sexe}
                   </Tag>
                 )}
                 {cat.maladie && (
-                  <Tag className="tag body1 bg-green" icon="health">
+                  <Tag className="tag body2 bg-green-contrasted" icon="health">
                     {cat.maladie}
                   </Tag>
                 )}
@@ -43,7 +43,7 @@ export default function CatModal({ cat, isOpen, onClose }: CatModalProps) {
           </div>
 
           <div className="cat-modal-actions">
-            <Button theme="transparent">Informations sur l’adoption</Button>
+            <Button theme="outlined">Informations sur l’adoption</Button>
             <Button>Contacter l’association</Button>
           </div>
         </div>

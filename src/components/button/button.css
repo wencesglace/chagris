@@ -69,7 +69,6 @@ button[disabled] {
 .btn-green {
   background-color: var(--action-green-bg);
   color: var(--action-green-text);
-  border: 1.5px solid var(--action-green-bg);
 }
 
 .btn-green:not(.btn--disabled):hover {
@@ -84,22 +83,21 @@ button[disabled] {
 .btn-outlined {
   background-color: transparent;
   color: var(--action-contrast-text);
-  border: 1.5px solid var(--action-contrast-text);
+  border: 1.5px solid var(--color-black-06);
 }
 
 .btn-outlined:not(.btn--disabled):hover {
-  background-color: var(--action-contrast-bg-hover);
+  background-color: var(--action-transparent-bg-hover);
 }
 
 .btn-outlined:not(.btn--disabled):active {
-  background-color: var(--action-contrast-bg-active);
+  background-color: var(--action-transparent-bg-active);
 }
 
 /* Bleu */
 .btn-blue {
   background-color: var(--action-blue-bg);
   color: var(--action-blue-text);
-  border: 1.5px solid var(--action-blue-bg);
 }
 
 .btn-blue:not(.btn--disabled):hover {
@@ -114,7 +112,6 @@ button[disabled] {
 .btn-pink {
   background-color: var(--action-pink-bg);
   color: var(--action-pink-text);
-  border: 1.5px solid var(--action-border);
 }
 
 .btn-pink:not(.btn--disabled):hover {

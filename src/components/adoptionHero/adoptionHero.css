@@ -5,12 +5,7 @@
   justify-content: center;
   text-align: center;
   overflow: hidden; /* évite que l'image déborde */
-  min-height: 440px;
-}
-
-.adoption-hero .logo {
-  max-width: 100%;
-  height: auto;
+  min-height: 400px;
 }
 
 /* Image derrière le texte */
@@ -18,7 +13,7 @@
   position: absolute;
   rotate: 10deg;
   left: 50%;
-  transform: translate(-40%, 85%);
+  transform: translate(-40%, 75%);
   height: 90%;
   width: auto;
   z-index: 2;
@@ -26,8 +21,9 @@
 
 .adoption-hero .content {
   position: relative;
-  padding-top: var(--spacing-64);
-  padding-bottom: var(--spacing-40);
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--gap-section-related);
 }
 
 .adoption-hero .content p {
@@ -36,12 +32,12 @@
 
 @media (max-width: 800px) {
   .adoption-hero .image {
-  position: absolute;
-  rotate: 10deg;
-  left: 50%;
-  transform: translate(-40%, 90%);
-  height: 100%;
-  width: auto;
-  z-index: 2;
-}
+    position: absolute;
+    rotate: 10deg;
+    left: 50%;
+    transform: translate(-40%, 90%);
+    height: 100%;
+    width: auto;
+    z-index: 2;
+  }
 }

@@ -9,7 +9,7 @@ export default function Adopt() {
   return (
     <>"
       <AdoptionHero className="layout-full bg-pink" />
-      <section className="adoption-container layout-wide">
+      <section className="adoption-container layout-full bg-yellow wavy wavy-yellow-pink">
         <div className="cats-grid">
           {catList.map((cat) => (
             <CatCard key={cat.id} cat={cat} />
