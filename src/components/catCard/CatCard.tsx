@@ -36,15 +36,6 @@ export default function CatCard({ cat }: CatCardProps) {
       </div>
 
       <div className="cat-content">
-        <div className="cat-title">
-          <h2 className="cat-name h2-light">{cat.nom}</h2>
-          {cat.rescueDate && (
-            <p className="cat-date caption">
-              Arrivé{cat.sexe == "Femelle" && "e"} le{" "}
-              {formatDateLong(cat.rescueDate)}
-            </p>
-          )}
-        </div>
         <div className="cat-tags">
           {cat.age && (
             <Tag className="caption bg-blue-contrasted" icon="age">
@@ -62,6 +53,16 @@ export default function CatCard({ cat }: CatCardProps) {
             </Tag>
           )}
         </div>
+        <div className="cat-title">
+          <h2 className="cat-name h2-light">{cat.nom}</h2>
+          {cat.rescueDate && (
+            <p className="cat-date caption">
+              Arrivé{cat.sexe == "Femelle" && "e"} le{" "}
+              {formatDateLong(cat.rescueDate)}
+            </p>
+          )}
+        </div>
+        
         <CatModal cat={cat} isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>
     </article>
