@@ -38,10 +38,8 @@
   mix-blend-mode: multiply;
 }
 
-/* Mobile : 2 lignes, 4 colonnes */
 @media (max-width: 800px) {
   .sponsors-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
+    gap: var(--gap-section-unrelated-mobile);
   }
 }

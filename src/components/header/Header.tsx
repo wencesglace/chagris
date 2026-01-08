@@ -3,9 +3,9 @@ import "./header.css";
 
 export default function Header() {
   return (
-    <header className="layout-full bg-blue-contrasted wavy-bottom wavy-blue">
+    <header className="layout-full bg-blue-contrasted ">
       <div className="header-content">
-        <nav aria-label="Menu principal">
+        <nav aria-label="Menu principal" className=" layout-half no-padding">
           <ul>
             <li>
               <Link className="body1" to="/">

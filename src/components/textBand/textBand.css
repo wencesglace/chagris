@@ -41,3 +41,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 800px) {
+  .text-band-content {
+    gap: var(--gap-subsection-related-mobile);
+  }
+}

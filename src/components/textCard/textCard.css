@@ -1,12 +1,9 @@
 .text-card {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-32);
+  gap: var(--gap-section-related);
   background: var(--surface-default);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 24px;
   border-radius: 24px;
   break-inside: avoid;
   justify-content: space-between;
@@ -14,7 +11,7 @@
 
 @media (max-width: 1200px) {
   .text-card.image {
-   display: none;
+    display: none;
   }
 }
 
@@ -75,7 +72,7 @@
 .text-card-content {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: var(--gap-subsection-related);
 }
 
 .text-card.image {
@@ -88,4 +85,14 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 800px) {
+  .text-card {
+    gap: var(--gap-section-related-mobile);
+    padding: 24px;
+  }
+  .text-card-content {
+    gap: var(--gap-subsection-related-mobile);
+  }
 }

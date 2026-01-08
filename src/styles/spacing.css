@@ -25,11 +25,20 @@
   /* paddings verticaux sections */
   --padding-main: 80px;
   --padding-section: 56px;
-  --padding-subsection: 20px;
-  
+  --padding-subsection: 24px;
+
+  --padding-main-mobile: 40px;
+  --padding-section-mobile: 24px;
+  --padding-subsection-mobile: 12px;
+
   /* gaps */
   --gap-section-unrelated: 56px;
   --gap-section-related: 32px;
   --gap-subsection-unrelated: 24px;
   --gap-subsection-related: 12px;
+
+  --gap-section-unrelated-mobile: 24px;
+  --gap-section-related-mobile: 20px;
+  --gap-subsection-unrelated-mobile: 16px;
+  --gap-subsection-related-mobile: 8px;
 }

@@ -19,12 +19,20 @@
 @media (min-width: 400px) {
   .cats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--gap-subsection-unrelated-mobile);
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .cats-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
+@media (max-width: 800px) {
+  .cats-grid {
+    padding-left: var(--padding-section-mobile);
+    padding-right: var(--padding-section-mobile);
+    gap: var(--gap-subsection-unrelated-mobile);
+  }
+}
