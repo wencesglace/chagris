@@ -17,7 +17,7 @@ export default function Hero({ className }: HeroProps) {
           compagnon.
         </p>
       </div>
-      <img src="images/chat_roux.png" alt="Chats" className="image" />
+      <img src="/images/chat_roux.png" alt="Chats" className="image" />
     </section>
   );
 }

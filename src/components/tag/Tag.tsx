@@ -12,7 +12,7 @@ export default function Tag({ className, children, icon }: TagProps) {
   return (
     <div className={classes}>
       {icon && <Icon name={icon} className="faq-chevron" />}
-      {children}
+      <span className="text">{children}</span>
     </div>
   );
 }

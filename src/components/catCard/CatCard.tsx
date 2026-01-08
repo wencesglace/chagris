@@ -20,49 +20,45 @@ export default function CatCard({ cat }: CatCardProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <article className={`cat-card ${showInfo ? "show-info" : ""}`}>
-      <div className="cat-image-wrapper" onClick={() => setIsOpen(true)}>
+    <article
+      className={`cat-card ${showInfo ? "show-info" : ""}`}
+      onClick={() => setIsOpen(true)}
+    >
+      <div className="cat-image-wrapper">
         <img
           className="cat-image"
           src={cat.photo[0]}
           alt={`Photo de ${cat.nom}`}
         />
-
-        {cat.description && (
-          <div className="cat-overlay">
-            <p className="cat-description body-1">{cat.description}</p>
-          </div>
-        )}
       </div>
 
       <div className="cat-content">
-        <div className="cat-tags">
-          {cat.age && (
-            <Tag className="caption bg-blue-contrasted" icon="age">
-              {catAge}
-            </Tag>
-          )}
-          {cat.sexe && (
-            <Tag className="caption bg-blue-contrasted" icon={sexeIcon}>
-              {cat.sexe}
-            </Tag>
-          )}
-          {cat.maladie && (
-            <Tag className="caption bg-green-contrasted" icon="health">
-              {cat.maladie}
-            </Tag>
-          )}
-        </div>
         <div className="cat-title">
-          <h2 className="cat-name h2-light">{cat.nom}</h2>
+          <h2 className="cat-name body1-bold">{cat.nom}</h2>
           {cat.rescueDate && (
             <p className="cat-date caption">
-              Arrivé{cat.sexe == "Femelle" && "e"} le{" "}
+              Arrivé{cat.sexe == "Femelle" && "e"} le {" "}
               {formatDateLong(cat.rescueDate)}
             </p>
           )}
         </div>
-        
+        <div className="cat-tags">
+          {cat.age && (
+            <Tag className="caption bg-blue" icon="age">
+              {catAge}
+            </Tag>
+          )}
+          {cat.sexe && (
+            <Tag className="caption bg-blue" icon={sexeIcon}>
+              {cat.sexe}
+            </Tag>
+          )}
+          {cat.maladie && (
+            <Tag className="caption bg-green" icon="health">
+              {cat.maladie}
+            </Tag>
+          )}
+        </div>
         <CatModal cat={cat} isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>
     </article>

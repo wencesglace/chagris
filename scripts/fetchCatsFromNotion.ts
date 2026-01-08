@@ -87,6 +87,7 @@ export async function fetchCatsFromNotion() {
         description: cat.description,
         photo: localPhotos,
         rescueDate: cat.rescueDate ?? undefined,
+        url: cat.url
       });
     }
 

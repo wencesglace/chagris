@@ -8,9 +8,9 @@ export default function Adopt() {
   const catList = cats as Cat[];
   return (
     <>"
-      <AdoptionHero className="layout-full bg-pink" />
-      <section className="adoption-container layout-full bg-yellow wavy wavy-yellow-pink">
-        <div className="cats-grid">
+      <AdoptionHero className="layout-full bg-yellow" />
+      <section className="adoption-container bg-yellow">
+        <div className="cats-grid layout-wide">
           {catList.map((cat) => (
             <CatCard key={cat.id} cat={cat} />
           ))}

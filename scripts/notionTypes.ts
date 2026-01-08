@@ -17,4 +17,7 @@ export type NotionCatProperties = {
       | { type: "external"; external: { url: string } }
     )[];
   };
+  "URL annonce": {
+    url: string | null;
+  };
 };

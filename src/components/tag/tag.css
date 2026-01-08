@@ -1,9 +1,13 @@
 .tag {
   position: relative;
   display: flex;
-  padding: 4px 6px;
+  padding: 0.4em 0.6em;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-  border-radius: 4px;
+  gap: 0.2em;
+  border-radius: 0.4em;
+}
+
+.tag .text {
+  padding: 0 0.2em;
 }
