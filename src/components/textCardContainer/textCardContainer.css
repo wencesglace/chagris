@@ -23,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
   gap: var(--gap-section-unrelated);
-  background: url("vectors/grid-pattern.svg") repeat;
+  background: url("/vectors/grid-pattern.svg") repeat;
   padding-bottom: 0px;
 }
 
