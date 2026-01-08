@@ -16,7 +16,7 @@ body {
 
 /* Variables de layout */
 :root {
-  --layout-max-width: 1440px;
+  --layout-max-width: 1280px;
   --layout-narrow-max-width: 1024px;
   --layout-half-max-width: 720px;
 

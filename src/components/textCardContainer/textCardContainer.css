@@ -49,6 +49,9 @@
   border-radius: 24px 24px 0 0;
   padding: var(--padding-section);
   max-width: 1200px;
+  border-top: 1px solid var(--color-green-09);
+  border-left: 1px solid var(--color-green-09);
+  border-right: 1px solid var(--color-green-09);
 }
 
 .support-us-heading {
@@ -61,8 +64,9 @@
   width: 100%;
 }
 
-.support-us-heading .body1 {
+.support-us-content .body1 {
   width: 100%;
+  color: var(--on-surface-default)
 }
 
 .support-us-details{

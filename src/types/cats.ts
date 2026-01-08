@@ -8,4 +8,5 @@ export interface Cat {
   description?: string;
   rescueDate?: string; // ← OPTIONNEL
   photo: string[];     // ← cohérent avec plusieurs photos
+  url?: string
 }

@@ -5,43 +5,28 @@
   justify-content: center;
   text-align: center;
   overflow: hidden; /* évite que l'image déborde */
-  min-height: 440px;
+  padding-top: 160px;
 }
-
-.adoption-hero .logo {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Image derrière le texte */
 .adoption-hero .image {
   position: absolute;
-  rotate: 10deg;
-  left: 50%;
-  transform: translate(-40%, 85%);
-  height: 90%;
+  top: 0px;
+  height: 160px;
   width: auto;
   z-index: 2;
 }
 
 .adoption-hero .content {
   position: relative;
-  padding-top: var(--spacing-64);
-  padding-bottom: var(--spacing-40);
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--gap-section-related);
+}
+
+.adoption-hero .content h1 {
+  color: var(--on-surface-pink)
 }
 
 .adoption-hero .content p {
   color: var(--on-surface-default);
-}
-
-@media (max-width: 800px) {
-  .adoption-hero .image {
-  position: absolute;
-  rotate: 10deg;
-  left: 50%;
-  transform: translate(-40%, 90%);
-  height: 100%;
-  width: auto;
-  z-index: 2;
-}
 }

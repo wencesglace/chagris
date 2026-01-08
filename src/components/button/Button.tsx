@@ -44,7 +44,7 @@ export default function Button(props: ButtonProps) {
     }
 
     return (
-      <a href={href} rel={rel} className={classes}>
+      <a href={href} rel={rel} className={classes} target={"_blank"}>
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
       </a>

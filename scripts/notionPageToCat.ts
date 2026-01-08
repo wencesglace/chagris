@@ -15,7 +15,7 @@ function getFilesUrls(
   files?: NotionCatProperties["Photo"]["files"]
 ): string[] {
   if (!files || files.length === 0) {
-    return ["images/adoptions/placeholder.png"];
+    return ["/images/placeholder.png"];
   }
 
   return files.map((file) =>
@@ -58,5 +58,7 @@ export function notionPageToCat(
     rescueDate: getDate(props["Recueilli le"]),
 
     photo: getFilesUrls(props.Photo?.files),
+
+    url: props["Lien annonce"]?.url ?? undefined,
   };
 }

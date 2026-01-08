@@ -24,7 +24,7 @@ export default function textCards({className=""}: textCardsProps) {
           ))}
         </section>
         <section className="support-us-container layout-wide">
-          <div className="support-us-content bg-blue-contrasted">
+          <div className="support-us-content bg-green">
             <div className="support-us-heading">
               <div className="support-us-title-container">
                 <p className="subtitle1">Vous avez envie de</p>
