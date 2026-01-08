@@ -24,8 +24,8 @@ export const textCardsList: TextCardProps[] = [
     description:
       "Une famille d’accueil supplémentaire, c’est un chat sauvé du danger, de la détresse et souvent d’une mort certaine dans la rue. L’association a pour mission principale la protection des chats libres. Dans ce cadre, lorsqu’un chat est identifié sociable il est confié à une de nos familles d’accueil.",
     theme: "blue",
-    primaryButtonLabel: "En savoir plus",
-    primaryButtonHref: "",
+    primaryButtonLabel: "C'est quoi FA ?",
+    primaryButtonHref: "/doc/03 - Famille d'Accueil.pdf",
   },
   {
     id: "4",
@@ -50,7 +50,7 @@ export const textCardsList: TextCardProps[] = [
       "Après socialisation des chatons et identification des adultes sociables, les chats recueillis sont mis à l’adoption. Vous pouvez les retrouver sur notre site ainsi que sur Facebook, Seconde Chance et Fonds St Bernard. En adoptant un chat avec nous, vous offrez une nouvelle chance à un animal qui a connu la vie dans la rue. ",
     theme: "blue-contrasted",
     primaryButtonLabel: "Je souhaite adopter",
-    primaryButtonHref: "",
+    primaryButtonHref: "https://www.fonds-saint-bernard.com/adopter/utilisateur/3276-chatslibresdegrenoblechagris",
   },
   {
     id: "7",
@@ -59,6 +59,8 @@ export const textCardsList: TextCardProps[] = [
     description:
       "Chaque chat recueilli est stérilisé et identifié chez un vétérinaire. C’est une question de salubrité publique et de protection de la faune qui cohabite avec les chats.",
     theme: "green-contrasted",
+    primaryButtonLabel: "Pourquoi stériliser ?",
+    primaryButtonHref: "/doc/02 - La stérilisation.pdf",
   },
   {
     id: "8",

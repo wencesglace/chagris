@@ -5,6 +5,7 @@ import type { Cat } from "../../types/cats";
 import "./adoptions.css";
 import cats from "../../data/cats.json";
 import Callout from "../callout/Callout";
+import Icon from "../icon/Icon";
 
 export default function Adoptions() {
   const catList = cats as Cat[];
@@ -34,7 +35,12 @@ export default function Adoptions() {
           compagnon.
         </p>
         <div className="actions-container">
-          <Button href="/adopt" theme="outlined" className="body1">
+          <Button
+            href="https://www.facebook.com/chatlibres.gris"
+            theme="outlined"
+            className="body1"
+          >
+            <Icon name="extLink" />
             Contacter l'association
           </Button>
           <Button href="/adopt" className="body1">
