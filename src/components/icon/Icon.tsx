@@ -10,6 +10,7 @@ import {
   IconBrandInstagramFilled,
   IconBrandTiktokFilled,
   IconExternalLink,
+  IconDownload,
 } from "@tabler/icons-react";
 import "./icon.css";
 
@@ -25,6 +26,7 @@ const icons = {
   tiktok: IconBrandTiktokFilled,
   instagram: IconBrandInstagramFilled,
   extLink: IconExternalLink,
+  download: IconDownload,
 };
 
 export type IconName = keyof typeof icons;
