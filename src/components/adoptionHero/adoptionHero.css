@@ -7,6 +7,7 @@
   overflow: hidden; /* évite que l'image déborde */
   padding-top: 160px;
 }
+
 /* Image derrière le texte */
 .adoption-hero .image {
   position: absolute;
@@ -24,9 +25,15 @@
 }
 
 .adoption-hero .content h1 {
-  color: var(--on-surface-pink)
+  color: var(--on-surface-pink);
 }
 
 .adoption-hero .content p {
   color: var(--on-surface-default);
+}
+
+@media (max-width: 800px) {
+  .adoption-hero .content {
+    gap: var(--gap-section-related-mobile);
+  }
 }

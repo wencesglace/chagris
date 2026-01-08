@@ -1,5 +1,5 @@
 .callout {
-  padding: var(--spacing-24) var(--spacing-56);
+  padding: 24px 56px;
   text-align: center;
   border-radius: 40px;
   margin: var(--spacing-32) 0;
@@ -7,4 +7,10 @@
 
 .callout p {
   margin: var(--spacing-8)
+}
+
+@media (max-width: 800px) {
+  .emphasis {
+    padding: 16px 32px;
+  }
 }

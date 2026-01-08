@@ -20,3 +20,20 @@ section {
   text-align: center;
   gap: var(--gap-subsection-related);
 }
+
+@media (max-width: 800px) {
+  main,
+section {
+  gap: var(--gap-section-unrelated-mobile);
+  padding-bottom: var(--padding-section-mobile);
+}
+
+.section {
+  padding-top: var(--padding-section-mobile);
+  padding-bottom: var(--padding-section-mobile);
+}
+
+.heading {
+  gap: var(--gap-subsection-related-mobile);
+}
+}

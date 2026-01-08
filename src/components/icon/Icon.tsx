@@ -12,7 +12,6 @@ import {
   IconExternalLink,
   IconDownload,
 } from "@tabler/icons-react";
-import "./icon.css";
 
 const icons = {
   navArrowDown: IconChevronDown,

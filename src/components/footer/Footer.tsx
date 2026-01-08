@@ -34,7 +34,7 @@ export default function Footer() {
           <a href="https://www.secondechance.org/" target="_blank">
             Seconde chance <Icon name="extLink"/>
           </a>
-          <a href="https://www.fonds-saint-bernard.com" target="_blank">
+          <a href="https://www.fonds-saint-bernard.com/adopter/utilisateur/3276-chatslibresdegrenoblechagris" target="_blank">
             Fonds Saint-Bernard <Icon name="extLink"/>
           </a>
         </div>

@@ -1,7 +1,6 @@
 .cat-modal {
   display: flex;
   text-align: left;
-  gap: 24px;
   color: var(--on-surface-default);
 }
 
@@ -28,7 +27,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap:24px;
+  gap: var(--gap-subsection-unrelated);
 }
 
 .cat-modal-tags {
@@ -47,31 +46,29 @@
 
 .cat-modal-actions {
   display: flex;
-  gap: 16px;
+  gap: var(--gap-subsection-related);
   margin-top: 24px;
 }
 
-.cat-modal-actions Button{
-  width:100%
+.cat-modal-actions Button {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
   .cat-modal {
-    flex-direction: column;
+    flex-direction:column-reverse;
+    height: fit-content;
+    max-height: none;
   }
 
   .cat-modal-image {
-    height: 220px;
+    width: 100%;
+    aspect-ratio: 1/1;
   }
 
   .cat-modal-actions {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 800px) {
-  .cat-modal-image {
-    display: none;
+    gap: var(--gap-subsection-related-mobile);
   }
 
   .cat-modal-header {
@@ -81,5 +78,9 @@
     justify-content: space-between;
     width: 100%;
     gap: 8px;
+  }
+
+  .cat-modal-text {
+    gap: var(--gap-subsection-unrelated-mobile);
   }
 }

@@ -63,3 +63,10 @@
   border-radius: 999;
   padding: 8px
 }
+
+@media (max-width: 800px) {
+  .modal-container {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+}

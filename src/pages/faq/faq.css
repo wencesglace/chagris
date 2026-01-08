@@ -91,3 +91,28 @@
   gap: var(--gap-subsection-related);
   margin-top: var(--gap-subsection-unrelated);
 }
+
+@media (max-width: 800px) {
+  .faq-container {
+    flex-direction: column;
+  }
+
+  .faq-container .header {
+    gap: var(--gap-section-related-mobile);
+    padding-top: var(--padding-main-mobile);
+    padding-bottom: var(--padding-main-mobile);
+  }
+
+  .faq-container .list {
+    gap: var(--gap-subsection-related-mobile);
+  }
+
+  .faq-item {
+    padding: var(--padding-subsection-mobile);
+  }
+
+  .faq-content {
+    gap: var(--gap-subsection-related-mobile);
+    margin-top: var(--gap-subsection-unrelated-mobile);
+  }
+}
