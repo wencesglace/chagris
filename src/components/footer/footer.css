@@ -37,6 +37,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+  footer{
+    padding-bottom: var(--padding-main);
+  }
   .footer-container {
     border-radius: 24px;
     display: flex;
