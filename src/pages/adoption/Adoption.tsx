@@ -7,7 +7,7 @@ import AdoptionHero from "../../components/adoptionHero/AdoptionHero";
 export default function Adopt() {
   const catList = cats as Cat[];
   return (
-    <>"
+    <>
       <AdoptionHero className="layout-full bg-yellow" />
       <section className="adoption-container bg-yellow">
         <div className="cats-grid layout-wide">

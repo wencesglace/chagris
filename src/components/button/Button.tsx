@@ -1,7 +1,13 @@
 import React from "react";
 import "./button.css";
 
-type ThemeColor = "green" | "pink" | "blue" | "black" | "transparent" | "outlined";
+type ThemeColor =
+  | "green"
+  | "pink"
+  | "blue"
+  | "black"
+  | "transparent"
+  | "outlined";
 
 type CommonProps = {
   theme?: ThemeColor;
@@ -44,7 +50,12 @@ export default function Button(props: ButtonProps) {
     }
 
     return (
-      <a href={href} rel={rel} className={classes} target={"_blank"}>
+      <a
+        href={href}
+        rel={rel}
+        target={href && href.startsWith("http") ? "_blank" : undefined}
+        className={classes}
+      >
         {icon && <span className="btn-icon">{icon}</span>}
         {children}
       </a>

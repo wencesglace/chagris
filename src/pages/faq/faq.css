@@ -93,14 +93,18 @@
 }
 
 @media (max-width: 800px) {
+  .faq {
+    padding-top: var(--padding-section-mobile);
+    padding-bottom: var(--padding-section-mobile);
+  }
+
   .faq-container {
     flex-direction: column;
   }
 
   .faq-container .header {
     gap: var(--gap-section-related-mobile);
-    padding-top: var(--padding-main-mobile);
-    padding-bottom: var(--padding-main-mobile);
+    padding: 0px;
   }
 
   .faq-container .list {
