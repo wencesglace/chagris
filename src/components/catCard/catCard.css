@@ -10,11 +10,9 @@
   min-width: 270px;
 }
 
-.cat-card:hover {
-  cursor: pointer;
-}
-
 .cat-card .cat-image-wrapper {
+  position: relative;
+  display: block;
   border-radius: 12px;
   overflow: hidden;
   width: 100%;
@@ -40,6 +38,38 @@
 /* Option: garder le zoom aussi lors du focus clavier pour accessibilité */
 .cat-card:focus-within .cat-image {
   transform: scale(1.04);
+}
+
+/* Overlay sombre + bouton "Voir l'annonce" au survol de la photo */
+.cat-image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.25s ease, background 0.25s ease;
+}
+
+.cat-image-wrapper:hover .cat-image-overlay,
+.cat-image-wrapper:focus-visible .cat-image-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.cat-image-overlay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background-color: var(--action-bg, #111);
+  color: var(--action-text, #fff);
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .cat-content {

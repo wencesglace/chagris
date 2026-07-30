@@ -1,12 +1,10 @@
 export interface Cat {
   id: string;
   nom: string;
-  age?: number;
-  sexe?: string;
-  statut: string;
-  maladie?: string;
+  ageCategory?: string; // ex: "Adulte", "Chaton" — fourni tel quel par le flux
+  sexe?: string;        // "Femelle" ou "Mâle"
+  maladie?: string;     // pas fourni par le flux actuel, gardé pour une saisie manuelle future
   description?: string;
-  rescueDate?: string; // ← OPTIONNEL
-  photo: string[];     // ← cohérent avec plusieurs photos
-  url?: string
+  photo: string[];      // une ou plusieurs photos
+  url?: string;
 }
