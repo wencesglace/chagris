@@ -60,7 +60,7 @@ export const textCardsList: TextCardProps[] = [
       "Chaque chat recueilli est stérilisé et identifié chez un vétérinaire. C’est une question de salubrité publique et de protection de la faune qui cohabite avec les chats.",
     theme: "green-contrasted",
     primaryButtonLabel: "Pourquoi stériliser ?",
-    primaryButtonHref: "/doc/02 - La stérilisation.pdf",
+    primaryButtonHref: "/doc/02 - La sterilisation.pdf",
   },
   {
     id: "8",
