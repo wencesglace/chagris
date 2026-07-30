@@ -3,6 +3,8 @@ import {
   IconGenderFemale,
   IconGenderMale,
   IconChevronDown,
+  IconChevronLeft,
+  IconChevronRight,
   IconReportMedical,
   IconInfoCircle,
   IconX,
@@ -21,6 +23,8 @@ import {
 
 const icons = {
   navArrowDown: IconChevronDown,
+  navArrowLeft: IconChevronLeft,
+  navArrowRight: IconChevronRight,
   female: IconGenderFemale,
   male: IconGenderMale,
   health: IconReportMedical,

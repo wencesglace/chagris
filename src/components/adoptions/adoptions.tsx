@@ -9,6 +9,23 @@ import Icon from "../icon/Icon";
 
 export default function Adoptions() {
   const catList = cats as Cat[];
+  const [first, second] = catList;
+
+  let heading: React.ReactNode;
+  if (!first) {
+    heading = "Nos chats cherchent leur futur foyer";
+  } else if (!second) {
+    heading = `${first.nom} cherche son futur foyer`;
+  } else if (catList.length === 2) {
+    heading = `${first.nom} et ${second.nom} cherchent leur futur foyer`;
+  } else {
+    heading = (
+      <>
+        {first.nom}, {second.nom} et bien d'autres <br />
+        cherchent leur futur foyer
+      </>
+    );
+  }
 
   return (
     <section className="adoption-container main layout-narrow">
@@ -23,10 +40,7 @@ export default function Adoptions() {
         ))}
       </div>
       <div className="heading">
-        <h1 className="h2">
-          {catList[0].nom}, {catList[1].nom} et bien d'autres <br />
-          cherchent leur futur foyer
-        </h1>
+        <h1 className="h2">{heading}</h1>
         <p className="body1 layout-half">
           Nous croyons que chaque chat mérite un foyer aimant et sûr. En
           adoptant un chat avec nous, vous offrez une nouvelle chance à un
