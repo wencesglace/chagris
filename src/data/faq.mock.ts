@@ -23,7 +23,7 @@ export const faq: FAQItem[] = [
     answer:
       "Si vous avez trouvé un chat, vérifiez s'il porte une médaille d'identification. Sinon, signalez-le à un vétérinaire et aux refuges locaux pour vérifier s'il est identifié par une puce électronique. Diffusez des affiches et des posts sur les réseaux sociaux pour retrouver son propriétaire. Contactez également CHAGRIS pour obtenir des conseils supplémentaires.",
     action: "Télécharger la fiche : chat trouvé",
-    url: "/doc/05 - Chat Trouvé.pdf",
+    url: "/doc/05 - Chat Trouve.pdf",
   },
   {
     question: "Comment faire un signalement ?",
