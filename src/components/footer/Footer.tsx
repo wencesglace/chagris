@@ -15,18 +15,21 @@ export default function Footer() {
           <a href="/faq">F.A.Q.</a>
         </div>
         <div className="col text">
-          <p className="subtitle1">Social</p>
+          <p className="subtitle1">Contact</p>
+          <a href="mailto:chatslibres.chagris@gmail.com">
+            Mail <Icon name="extLink" />
+          </a>
           <a href="https://www.facebook.com/chatlibres.gris" target="_blank">
-            <Icon name="facebook" /> Facebook <Icon name="extLink" />
+            Facebook <Icon name="extLink" />
           </a>
           <a href="https://www.instagram.com/chagris38/" target="_blank">
-            <Icon name="instagram" /> Instagram <Icon name="extLink" />
+            Instagram <Icon name="extLink" />
           </a>
           <a
             href="https://www.tiktok.com/@associationchagris38"
             target="_blank"
           >
-            <Icon name="tiktok" /> Tiktok <Icon name="extLink"/>
+            Tiktok <Icon name="extLink"/>
           </a>
         </div>
         <div className="col text">

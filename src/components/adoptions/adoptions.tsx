@@ -50,11 +50,11 @@ export default function Adoptions() {
         </p>
         <div className="actions-container">
           <Button
-            href="https://www.facebook.com/chatlibres.gris"
+            href="mailto:chatslibres.chagris@gmail.com"
             theme="outlined"
             className="body1"
           >
-            <Icon name="extLink" />
+            <Icon name="mail" />
             Contacter l'association
           </Button>
           <Button href="/adopt" className="body1">
