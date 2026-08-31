@@ -18,10 +18,19 @@
   }
 }
 
+@keyframes sheetSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .modal-overlay,
-  .modal {
-    animation: none;
+  .modal-container {
+    animation: none !important;
     opacity: 1;
     transform: none;
   }
@@ -64,9 +73,36 @@
   padding: 8px
 }
 
+/* Sous 800px, le modal se comporte comme un "bottom sheet" : ancré en bas,
+   coins arrondis en haut uniquement, avec une poignée visuelle. Pas de
+   swipe-to-close (nécessiterait du JS de gestion tactile) — on ferme via
+   la croix, le clic en dehors, ou la touche Échap, comme avant. */
 @media (max-width: 800px) {
+  .modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
   .modal-container {
-    max-height: 100vh;
+    max-height: 85vh;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
     overflow: scroll;
+    animation: sheetSlideUp 220ms ease-out forwards;
+    padding-top: 20px;
+  }
+
+  .modal-container::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--color-black-03);
+    margin: 0 auto 8px;
+  }
+
+  .modal-container .modal-close {
+    top: 24px;
   }
 }

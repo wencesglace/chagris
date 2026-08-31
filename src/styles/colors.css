@@ -189,3 +189,15 @@ Note : les numéros font référence à la nuance dans Radix */
   background-color: var(--surface-yellow-contrasted);
   color: var(--on-surface-yellow-contrasted);
 }
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-blue {
+  color: var(--color-blue-09);
+}
+
+.text-green {
+  color: var(--color-green-09);
+}

@@ -17,6 +17,34 @@
   overflow: hidden;
   width: 100%;
   aspect-ratio: 3/2;
+  /* reset des styles natifs, maintenant que c'est un <button> et non un <a> */
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+/* Contenu affiché dans la modale au clic sur une fiche chat */
+.cat-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.cat-modal-image {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.cat-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  padding: 0 var(--spacing-16) var(--spacing-16);
 }
 
 /* Image carrée du chat */

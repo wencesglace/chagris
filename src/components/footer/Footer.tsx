@@ -30,7 +30,22 @@ export default function Footer() {
           </a>
         </div>
         <div className="col text">
-          <p className="subtitle1">Annexes</p>
+          <p className="subtitle1">Nous aider</p>
+          <a
+            href="https://www.helloasso.com/associations/chats-libres-de-grenoble-et-de-l-isere-chagris"
+            target="_blank"
+          >
+            HelloAsso <Icon name="extLink" />
+          </a>
+          <a
+            href="https://www.teaming.net/chatslibresdegrenoblechagris"
+            target="_blank"
+          >
+            Teaming <Icon name="extLink" />
+          </a>
+        </div>
+        <div className="col text">
+          <p className="subtitle1">Adoptions</p>
           <a href="https://www.secondechance.org/" target="_blank">
             Seconde chance <Icon name="extLink"/>
           </a>

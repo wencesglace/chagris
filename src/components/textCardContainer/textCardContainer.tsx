@@ -1,9 +1,8 @@
 // encart un peu plus léger
-// import Button from "../button/Button";
+import Button from "../button/Button";
 import TextCard from "../textCard/TextCard";
 import "./textCardContainer.css";
 import { textCardsList } from "../../data/textCardsList.mock";
-// import Icon from "../icon/Icon";
 
 type textCardsProps = {
   className?: string;
@@ -20,6 +19,13 @@ export default function textCards({ className = "" }: textCardsProps) {
           Chagris veille sur les chats libres de Grenoble et de l’Isère depuis
           plus de 20 ans en leur offrant des soins, un logis et une famille.
         </p>
+        <a
+          href="https://www.helloasso.com/associations/chats-libres-de-grenoble-et-de-l-isere-chagris/formulaires/1"
+          target="_blank"
+          class="btn btn-blue body1 btn-blue-contrasted"
+        >
+          Nous soutenir
+        </a>
       </div>
       <section className="text-cards-section layout-narrow no-padding">
         {textCardsList.map((card, i) => (
@@ -68,15 +74,6 @@ export default function textCards({ className = "" }: textCardsProps) {
               </p>
             </div>
           </div>
-          {/* <div className="action-container">
-            <Button
-              href="https://www.facebook.com/chatlibres.gris"
-              className="btn-pink subtitle1 emphasis"
-            >
-              <Icon name="facebook" />
-              Contacter l'association
-            </Button>
-          </div> */}
         </div>
       </section>
     </section>

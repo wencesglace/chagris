@@ -79,7 +79,20 @@ button[disabled] {
   background-color: var(--action-green-bg);
 }
 
-/*blanc*/
+/* Blanc (inverse du noir) */
+.btn-white {
+  background-color: var(--action-contrast-bg);
+  color: var(--action-contrast-text);
+}
+
+.btn-white:not(.btn--disabled):hover {
+  background-color: var(--action-contrast-bg-hover);
+}
+
+.btn-white:not(.btn--disabled):active {
+  background-color: var(--action-contrast-bg-active);
+}
+
 .btn-outlined {
   background-color: transparent;
   color: var(--action-contrast-text);
