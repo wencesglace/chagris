@@ -8,7 +8,10 @@ export default function Adopt() {
   const catList = cats as Cat[];
   return (
     <>
-      <AdoptionHero className="layout-full bg-yellow" />
+      <AdoptionHero
+        className="layout-full bg-yellow"
+        hasCats={catList.length > 0}
+      />
       <section className="adoption-container bg-yellow">
         <div className="cats-grid layout-wide">
           {catList.map((cat) => (

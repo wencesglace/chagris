@@ -17,6 +17,10 @@
   color: var(--on-surface-default);
 }
 
+.text-cards-container .heading .btn {
+  margin-top: var(--gap-subsection-unrelated);
+}
+
 .text-cards-container {
   display: flex;
   align-items: center;
@@ -148,6 +152,10 @@
     gap: var(--gap-section-related-mobile);
     padding: var(--padding-section-mobile);
     padding-bottom: 0;
+  }
+
+  .text-cards-container .heading .btn {
+    margin-top: var(--gap-subsection-unrelated-mobile);
   }
 
   .support-us-container {

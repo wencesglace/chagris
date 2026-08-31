@@ -18,7 +18,8 @@ import {
   IconPaw,
   IconPawFilled,
   IconMessage,
-  IconMessageFilled
+  IconMessageFilled,
+  IconMail
 } from "@tabler/icons-react";
 
 const icons = {
@@ -41,7 +42,8 @@ const icons = {
   paw: IconPaw,
   pawFilled: IconPawFilled,
   message: IconMessage,
-  messageFilled: IconMessageFilled
+  messageFilled: IconMessageFilled,
+  mail: IconMail
 };
 
 export type IconName = keyof typeof icons;

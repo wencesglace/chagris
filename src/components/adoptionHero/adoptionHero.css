@@ -32,8 +32,21 @@
   color: var(--on-surface-default);
 }
 
+.adoption-hero .actions-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: var(--gap-subsection-related);
+}
+
 @media (max-width: 800px) {
   .adoption-hero .content {
     gap: var(--gap-section-related-mobile);
+  }
+
+  .adoption-hero .actions-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-subsection-unrelated-mobile);
   }
 }

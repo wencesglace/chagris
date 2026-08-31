@@ -27,7 +27,7 @@ export default function Links() {
                 href="mailto:chatslibres.chagris@gmail.com"
                 theme="blue"
                 className="fullwidth"
-                icon={<Icon name="messageFilled" />}
+                icon={<Icon name="mail" />}
               >
                 Mail
               </Button>
@@ -95,7 +95,7 @@ export default function Links() {
                 href="https://www.fonds-saint-bernard.com/adopter/utilisateur/3276-chatslibresdegrenoblechagris"
                 theme="blue"
                 className="fullwidth"
-                icon={<Icon name="extLink" />}
+                icon={<Icon name="paw" />}
               >
                 Fonds Saint-Bernard
               </Button>
@@ -104,7 +104,7 @@ export default function Links() {
                 href="https://www.secondechance.org/"
                 theme="blue"
                 className="fullwidth"
-                icon={<Icon name="extLink" />}
+                icon={<Icon name="paw" />}
               >
                 Seconde chance
               </Button>
