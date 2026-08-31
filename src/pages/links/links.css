@@ -1,0 +1,111 @@
+.links-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px var(--spacing-16) 0;
+  text-align: center;
+  background-image: url("/vectors/grid-pattern.svg");
+  background-repeat: repeat;
+}
+
+.links-image-top {
+  position: absolute;
+  top: 0;
+  height: 160px;
+  width: auto;
+  z-index: 2;
+}
+
+.links-columns-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.links-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacing-56);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-32);
+  flex: 1;
+  min-width: 0;
+}
+
+.links-section-title {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  width: 100%;
+}
+
+.links-column .btn {
+  padding: 18px 24px;
+  font-size: 17px;
+}
+
+.links-logo-container {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: var(--spacing-32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-8) var(--spacing-16) var(--spacing-12);
+}
+
+.links-logo-bottom {
+  width: 192px;
+  height: 192px;
+  flex-shrink: 0;
+}
+
+.links-logo-blue {
+  background-color: var(--color-blue-09);
+  -webkit-mask: url("/images/logo-white.png") center / contain no-repeat;
+  mask: url("/images/logo-white.png") center / contain no-repeat;
+}
+
+@media (max-width: 800px) {
+  .links-columns-wrapper {
+    flex: none;
+    display: block;
+    width: 100%;
+  }
+
+  .links-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-32);
+  }
+
+  .links-section {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .links-logo-container {
+    margin-top: var(--spacing-48);
+  }
+}

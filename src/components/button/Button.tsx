@@ -6,6 +6,7 @@ type ThemeColor =
   | "pink"
   | "blue"
   | "black"
+  | "white"
   | "transparent"
   | "outlined";
 
@@ -15,6 +16,10 @@ type CommonProps = {
   className?: string;
   children: React.ReactNode;
   disabled?: boolean;
+  /** Remplace le texte du bouton et le désactive pendant une action en cours (ex: envoi d'un formulaire). */
+  isLoading?: boolean;
+  /** Texte affiché quand isLoading est vrai. Défaut : "Chargement..." */
+  loadingText?: string;
 };
 
 type ButtonAsButton = CommonProps &
@@ -30,9 +35,20 @@ type ButtonAsLink = CommonProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export default function Button(props: ButtonProps) {
-  const { theme = "black", icon, className, children, disabled } = props;
+  const {
+    theme = "black",
+    icon,
+    className,
+    children,
+    disabled,
+    isLoading = false,
+    loadingText = "Chargement...",
+  } = props;
 
-  const classes = `btn btn-${theme} ${disabled ? "btn--disabled" : ""} ${
+  const isDisabled = disabled || isLoading;
+  const content = isLoading ? loadingText : children;
+
+  const classes = `btn btn-${theme} ${isDisabled ? "btn--disabled" : ""} ${
     className ?? ""
   }`;
 
@@ -40,11 +56,11 @@ export default function Button(props: ButtonProps) {
   if ("href" in props) {
     const { href, rel } = props;
 
-    if (disabled) {
+    if (isDisabled) {
       return (
         <span className={classes} aria-disabled="true">
-          {icon && <span className="btn-icon">{icon}</span>}
-          {children}
+          {icon && !isLoading && <span className="btn-icon">{icon}</span>}
+          {content}
         </span>
       );
     }
@@ -57,7 +73,7 @@ export default function Button(props: ButtonProps) {
         className={classes}
       >
         {icon && <span className="btn-icon">{icon}</span>}
-        {children}
+        {content}
       </a>
     );
   }
@@ -70,10 +86,10 @@ export default function Button(props: ButtonProps) {
       {...buttonProps}
       type={type}
       className={classes}
-      disabled={disabled}
+      disabled={isDisabled}
     >
-      {icon && <span className="btn-icon">{icon}</span>}
-      {children}
+      {icon && !isLoading && <span className="btn-icon">{icon}</span>}
+      {content}
     </button>
   );
 }
