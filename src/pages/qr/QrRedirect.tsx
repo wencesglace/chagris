@@ -1,16 +1,26 @@
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
+import qrSources from "../../data/qrSources.json";
 
-// C'est CETTE URL que le QR code physique (imprimé sur le kakemono) encode.
-// Elle ne bouge jamais. Pour changer où le QR code amène les gens (ex: vers
-// une page événement ponctuelle, une cagnotte spéciale...), il suffit de
-// changer la valeur ci-dessous et de redéployer — pas besoin de réimprimer
-// le support physique.
-const QR_REDIRECT_TARGET = "/links";
+// Mapping source -> destination édité dans src/data/qrSources.json
+// (pas besoin de toucher ce fichier pour ajouter une nouvelle source).
+const sources = qrSources as Record<string, string>;
 
 export default function QrRedirect() {
+  const [searchParams] = useSearchParams();
+
   useEffect(() => {
-    window.location.replace(QR_REDIRECT_TARGET);
-  }, []);
+    const source = searchParams.get("source");
+    const destination = (source && sources[source]) || sources.default;
+
+    const url = new URL(destination, window.location.origin);
+    if (source) {
+      url.searchParams.set("utm_source", source);
+      url.searchParams.set("utm_medium", "qr_code");
+    }
+
+    window.location.replace(url.toString());
+  }, [searchParams]);
 
   return null;
 }
