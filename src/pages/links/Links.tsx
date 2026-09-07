@@ -9,12 +9,21 @@ import "./links.css";
 export default function Links() {
   return (
     <main className="links-page bg-white">
-      <img
-        src="/images/chat_roux.png"
-        alt="Chat"
-        className="links-image-top"
-      />
-
+      <img src="/images/chat_roux.png" alt="Chat" className="links-image-top" />
+      <div className="links-columns-wrapper">
+        <div className="links-columns">
+          {/* Retour à l'accueil */}
+          <div className="links-section full-widt">
+              <Button
+                href="/"
+                theme="transparent"
+                icon={<Icon name="home" />}
+              >
+                Accueil du site
+              </Button>
+          </div>
+        </div>
+      </div>
       <div className="links-columns-wrapper">
         <div className="links-columns">
           {/* Nous contacter */}
@@ -87,9 +96,7 @@ export default function Links() {
 
           {/* Adoptions */}
           <div className="links-section">
-            <p className="subtitle1 links-section-title text-blue">
-              Adoptions
-            </p>
+            <p className="subtitle1 links-section-title text-blue">Adoptions</p>
             <div className="links-column">
               <Button
                 href="https://www.fonds-saint-bernard.com/adopter/utilisateur/3276-chatslibresdegrenoblechagris"
